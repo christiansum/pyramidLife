@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Plpai</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ plPai.id }}</td>
+            </tr>
+            <tr>
+                <th>Panombre</th>
+                <td>{{ plPai.paNombre }}</td>
+            </tr>
+            <tr>
+                <th>Pacodigoarea</th>
+                <td>{{ plPai.paCodigoArea }}</td>
+            </tr>
+            <tr>
+                <th>Pacreatedat</th>
+                <td>{% if plPai.paCreatedAt %}{{ plPai.paCreatedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Paupdatedat</th>
+                <td>{% if plPai.paUpdatedAt %}{{ plPai.paUpdatedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Paactive</th>
+                <td>{% if plPai.paActive %}Yes{% else %}No{% endif %}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('pais_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('pais_edit', { 'id': plPai.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

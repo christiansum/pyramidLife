@@ -1,3 +1,7 @@
+pylife_pais:
+    resource: "@PylifeBundle/Resources/config/routing/plpais.yml"
+    prefix:   /pais
+
 pylife_homepage:
     path:     /
     defaults: { _controller: PylifeBundle:Default:index }

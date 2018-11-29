@@ -1,1 +1,61 @@
-Hello World!
+{% extends ['PylifeBundle::header.html.twig'] %}
+{% block title %}Index{% endblock %}
+{%  block body %}
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">			
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="{{path('pylife_homepage')}}"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
+				<li class="active">Home</li>
+			</ol>
+		</div><!--/.row-->
+		
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="page-header">Bienvenido a PyramidLife</h1>
+			</div>
+		</div><!--/.row-->
+				
+		
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">Acerca de PyramidLife</div>
+					<div class="panel-body">
+						<div class="col-md-12">
+							<h4>Nuestra filosofia</h4>
+
+							<p>Nuestra empresa busca ser una institución de servicio, ya que creemos que la empresa está constituida por hombres y para servir hombres. El concepto de sentido humano constituye un elemento fundamental de Herbalife siempre ofreciendo productos de la más alta calidad y contribuyendo en el cuidado de la salud de nuestros consumidores pero siempre con un profundo sentido humano.</p>
+
+							<h4>Nuestros Valores</h4>
+							<ul>
+								<li>Honestidad: En el cumplimiento integral de las funciones de la empresa con sus clientes, colaboradores, autoridades, medio ambiente y comunidad en general.</li>
+								<li>Permanencia: Crear entre la empresa y sus colaboradores una relación duradera, mediante la constante capacitación y programas de desarrollo humano.</li>
+								<li>Innovación: Búsqueda permanente de mejores productos y servicios para los clientes, así como mejores oportunidades de crecimiento para la empresa.</li>
+								<li>Servicio: Superar las expectativas de los clientes, en calidad, puntualidad y atención personalizada, anticipándonos a sus necesidades y creando en ellos un clima de confianza y amistad duradera.</li>
+								<li>Trabajo en equipo: Apoyamos la labor en conjunto, desarrollando nuestras tareas confiando en la labor de los demás miembros del grupo.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div><!-- /.col-->
+		</div><!-- /.row -->
+
+			
+	</div>	<!--/.main-->
+	<script>
+
+		!function ($) {
+		    $(document).on("click","ul.nav li.parent > a > span.icon", function(){          
+		        $(this).find('em:first').toggleClass("glyphicon-minus");      
+		    }); 
+		    $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+		}(window.jQuery);
+
+		$(window).on('resize', function () {
+		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+		})
+		$(window).on('resize', function () {
+		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+		})
+	</script>	
+{% endblock %}
