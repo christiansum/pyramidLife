@@ -1,0 +1,114 @@
+PylifeBundle\Entity\PlPosicion:
+    type: entity
+    table: pl_posicion
+    indexes:
+        fk_pl_premio_pl_posicion_idx:
+            columns:
+                - pos_pre_id
+        fk_pl_periodo_premio_pl_posicion_idx:
+            columns:
+                - pos_pp_id
+        fk_pl_moneda_pl_posicion_idx:
+            columns:
+                - pos_mon_id
+        fk_pl_user_pl_posicion_created_idx:
+            columns:
+                - pos_usr_created_by
+        fk_pl_user_pl_posicion_updated_idx:
+            columns:
+                - pos_usr_updated_by
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        posNombre:
+            type: string
+            nullable: false
+            length: 80
+            options:
+                fixed: false
+            column: pos_nombre
+        posPuntos:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: pos_puntos
+        posVentas:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: pos_ventas
+        posCreatedAt:
+            type: datetime
+            nullable: false
+            column: pos_created_at
+        posUpdatedAt:
+            type: datetime
+            nullable: true
+            column: pos_updated_at
+        posActive:
+            type: boolean
+            nullable: false
+            options:
+                default: '1'
+            column: pos_active
+    manyToOne:
+        posMon:
+            targetEntity: PlMoneda
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                pos_mon_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        posPp:
+            targetEntity: PlPeriodoPremio
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                pos_pp_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        posPre:
+            targetEntity: PlPremio
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                pos_pre_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        posUsrCreatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                pos_usr_created_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+        posUsrUpdatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                pos_usr_updated_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

@@ -1,0 +1,79 @@
+PylifeBundle\Entity\PlInventario:
+    type: entity
+    table: pl_inventario
+    indexes:
+        fk_pl_producto_pl_inventario_idx:
+            columns:
+                - inv_pro_id
+        fk_pl_user_pl_inventario_updated_idx:
+            columns:
+                - inv_usr_updated_by
+        fk_pl_user_pl_inventario_created_idx:
+            columns:
+                - inv_usr_created_by
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        invCantidad:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: inv_cantidad
+        invFechaVencimiento:
+            type: datetime
+            nullable: false
+            column: inv_fecha_vencimiento
+        invCreatedAt:
+            type: datetime
+            nullable: false
+            column: inv_created_at
+        invUpdatedAt:
+            type: datetime
+            nullable: true
+            column: inv_updated_at
+        invActive:
+            type: boolean
+            nullable: false
+            options:
+                default: '1'
+            column: inv_active
+    manyToOne:
+        invPro:
+            targetEntity: PlProducto
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                inv_pro_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        invUsrCreatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                inv_usr_created_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+        invUsrUpdatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                inv_usr_updated_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

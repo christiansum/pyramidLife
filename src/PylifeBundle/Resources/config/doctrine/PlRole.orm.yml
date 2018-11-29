@@ -1,0 +1,63 @@
+PylifeBundle\Entity\PlRole:
+    type: entity
+    table: pl_role
+    indexes:
+        fk_pl_user_pl_role_created_idx:
+            columns:
+                - rol_usr_created_by
+        fk_pl_user_pl_role_updated_idx:
+            columns:
+                - rol_usr_updated_by
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        rolNombre:
+            type: string
+            nullable: false
+            length: 70
+            options:
+                fixed: false
+            column: rol_nombre
+        rolCreatedAt:
+            type: datetime
+            nullable: false
+            column: rol_created_at
+        rolUpdatedAt:
+            type: datetime
+            nullable: true
+            column: rol_updated_at
+        rolActive:
+            type: boolean
+            nullable: false
+            options:
+                default: '1'
+            column: rol_active
+    manyToOne:
+        rolUsrCreatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                rol_usr_created_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+        rolUsrUpdatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                rol_usr_updated_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

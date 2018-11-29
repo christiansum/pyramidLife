@@ -1,0 +1,3 @@
+pylife_homepage:
+    path:     /
+    defaults: { _controller: PylifeBundle:Default:index }

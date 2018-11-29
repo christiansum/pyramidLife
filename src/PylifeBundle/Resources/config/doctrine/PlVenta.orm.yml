@@ -1,0 +1,82 @@
+PylifeBundle\Entity\PlVenta:
+    type: entity
+    table: pl_venta
+    indexes:
+        fk_pl_user_pl_venta_idx:
+            columns:
+                - ven_usr_id
+        fk_pl_pais_pl_venta_idx:
+            columns:
+                - ven_pa_id
+        fk_pl_user_pl_venta_created_idx:
+            columns:
+                - ven_usr_created_by
+        fk_pl_user_pl_venta_updated_idx:
+            columns:
+                - ven_usr_updated_by
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        venCreatedAt:
+            type: datetime
+            nullable: false
+            column: ven_created_at
+        venUpdatedAt:
+            type: datetime
+            nullable: true
+            column: ven_updated_at
+        venActive:
+            type: boolean
+            nullable: false
+            options:
+                default: '1'
+            column: ven_active
+    manyToOne:
+        venPa:
+            targetEntity: PlPais
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                ven_pa_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        venUsr:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                ven_usr_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        venUsrCreatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                ven_usr_created_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+        venUsrUpdatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                ven_usr_updated_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

@@ -1,0 +1,101 @@
+PylifeBundle\Entity\PlProducto:
+    type: entity
+    table: pl_producto
+    indexes:
+        fk_pl_pais_pl_producto_idx:
+            columns:
+                - pro_pa_id
+        fk_pl_moneda_pl_producto_idx:
+            columns:
+                - pro_mo_id
+        fk_pl_user_pl_producto_created_idx:
+            columns:
+                - pro_usr_created_by
+        fk_pl_user_pl_producto_updated_idx:
+            columns:
+                - pro_usr_updated_by
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        proNombre:
+            type: string
+            nullable: false
+            length: 100
+            options:
+                fixed: false
+            column: pro_nombre
+        proPrecio:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            column: pro_precio
+        proPuntos:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: pro_puntos
+        proCreatedAt:
+            type: datetime
+            nullable: false
+            column: pro_created_at
+        proUpdatedAt:
+            type: datetime
+            nullable: true
+            column: pro_updated_at
+        proActive:
+            type: boolean
+            nullable: false
+            options:
+                default: '1'
+            column: pro_active
+    manyToOne:
+        proMo:
+            targetEntity: PlMoneda
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                pro_mo_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        proPa:
+            targetEntity: PlPais
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                pro_pa_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        proUsrCreatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                pro_usr_created_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+        proUsrUpdatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                pro_usr_updated_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

@@ -1,0 +1,71 @@
+PylifeBundle\Entity\PlPeriodoPremio:
+    type: entity
+    table: pl_periodo_premio
+    indexes:
+        fk_pl_user_pl_periodo_premio_created_idx:
+            columns:
+                - pp_usr_created_by
+        fk_pl_user_pl_periodo_premio_updated_idx:
+            columns:
+                - pp_usr_updated_by
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        ppNombre:
+            type: string
+            nullable: false
+            length: 150
+            options:
+                fixed: false
+            column: pp_nombre
+        ppFechaInicial:
+            type: date
+            nullable: false
+            column: pp_fecha_inicial
+        ppFechaFinal:
+            type: date
+            nullable: false
+            column: pp_fecha_final
+        ppCreatedAt:
+            type: datetime
+            nullable: false
+            column: pp_created_at
+        ppUpdatedAt:
+            type: datetime
+            nullable: true
+            column: pp_updated_at
+        ppActive:
+            type: boolean
+            nullable: false
+            options:
+                default: '1'
+            column: pp_active
+    manyToOne:
+        ppUsrCreatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                pp_usr_created_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+        ppUsrUpdatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                pp_usr_updated_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

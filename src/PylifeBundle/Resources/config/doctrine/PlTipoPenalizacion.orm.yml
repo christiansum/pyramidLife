@@ -1,0 +1,76 @@
+PylifeBundle\Entity\PlTipoPenalizacion:
+    type: entity
+    table: pl_tipo_penalizacion
+    indexes:
+        fk_pl_user_pl_tipo_penalizacion_created_idx:
+            columns:
+                - pti_usr_created_by
+        fk_pl_user_pl_tipo_penalizacion_updated_idx:
+            columns:
+                - pti_usr_updated_by
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        ptiNombre:
+            type: string
+            nullable: false
+            length: 70
+            options:
+                fixed: false
+            column: pti_nombre
+        ptiNombreMaquina:
+            type: string
+            nullable: false
+            length: 45
+            options:
+                fixed: false
+            column: pti_nombre_maquina
+        ptiValor:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: pti_valor
+        ptiCreatedAt:
+            type: datetime
+            nullable: false
+            column: pti_created_at
+        ptiUpdatedAt:
+            type: datetime
+            nullable: true
+            column: pti_updated_at
+        ptiActive:
+            type: boolean
+            nullable: false
+            options:
+                default: '1'
+            column: pti_active
+    manyToOne:
+        ptiUsrCreatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                pti_usr_created_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+        ptiUsrUpdatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                pti_usr_updated_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

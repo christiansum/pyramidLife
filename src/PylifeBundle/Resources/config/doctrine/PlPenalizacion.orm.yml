@@ -1,0 +1,90 @@
+PylifeBundle\Entity\PlPenalizacion:
+    type: entity
+    table: pl_penalizacion
+    indexes:
+        fk_pl_user_pl_penalizacion_idx:
+            columns:
+                - pna_usr_id
+        fk_pl_user_pl_penalizacion_created_idx:
+            columns:
+                - pna_usr_created_by
+        fk_pl_user_pl_penalizacion_updated_idx:
+            columns:
+                - pna_usr_updated_by
+        fk_pl_tipo_penalizacion_pl_penalizacion_idx:
+            columns:
+                - pna_pti_id
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        pnaTiempoInicio:
+            type: date
+            nullable: false
+            column: pna_tiempo_inicio
+        pnaTiempoFin:
+            type: date
+            nullable: false
+            column: pna_tiempo_fin
+        pnaCreatedAt:
+            type: datetime
+            nullable: false
+            column: pna_created_at
+        pnaUpdatedAt:
+            type: datetime
+            nullable: true
+            column: pna_updated_at
+        pnaActive:
+            type: boolean
+            nullable: false
+            options:
+                default: '1'
+            column: pna_active
+    manyToOne:
+        pnaPti:
+            targetEntity: PlTipoPenalizacion
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                pna_pti_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        pnaUsr:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                pna_usr_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        pnaUsrCreatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                pna_usr_created_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+        pnaUsrUpdatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                pna_usr_updated_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

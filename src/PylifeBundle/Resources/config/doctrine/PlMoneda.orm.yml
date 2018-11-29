@@ -1,0 +1,70 @@
+PylifeBundle\Entity\PlMoneda:
+    type: entity
+    table: pl_moneda
+    indexes:
+        fk_pl_user_pl_moneda_created_idx:
+            columns:
+                - mo_usr_created_by
+        fk_pl_user_pl_moneda_updated_idx:
+            columns:
+                - mo_usr_updated_by
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        moNombre:
+            type: string
+            nullable: false
+            length: 70
+            options:
+                fixed: false
+            column: mo_nombre
+        moSimbolo:
+            type: string
+            nullable: false
+            length: 10
+            options:
+                fixed: false
+            column: mo_simbolo
+        moCreatedAt:
+            type: datetime
+            nullable: false
+            column: mo_created_at
+        moUpdatedAt:
+            type: datetime
+            nullable: true
+            column: mo_updated_at
+        moActive:
+            type: boolean
+            nullable: false
+            options:
+                default: '1'
+            column: mo_active
+    manyToOne:
+        moUsrCreatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                mo_usr_created_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+        moUsrUpdatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                mo_usr_updated_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

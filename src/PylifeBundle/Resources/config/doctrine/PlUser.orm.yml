@@ -1,0 +1,70 @@
+PylifeBundle\Entity\PlUser:
+    type: entity
+    table: pl_user
+    indexes:
+        fk_pl_pais_pl_pais_idx:
+            columns:
+                - usr_pa_id
+    uniqueConstraints:
+        UNIQ_18A6913B92FC23A8:
+            columns:
+                - username_canonical
+        UNIQ_18A6913BA0D96FBF:
+            columns:
+                - email_canonical
+        UNIQ_18A6913BC05FB297:
+            columns:
+                - confirmation_token
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        usrNombre:
+            type: string
+            nullable: true
+            length: 100
+            options:
+                fixed: false
+            column: usr_nombre
+        usrApellido:
+            type: string
+            nullable: true
+            length: 100
+            options:
+                fixed: false
+            column: usr_apellido
+        usrFechaNacimiento:
+            type: datetime
+            nullable: true
+            column: usr_fecha_nacimiento
+        usrNit:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: usr_nit
+        usrDireccion:
+            type: string
+            nullable: true
+            length: 200
+            options:
+                fixed: false
+            column: usr_direccion
+    manyToOne:
+        usrPa:
+            targetEntity: PlPais
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                usr_pa_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

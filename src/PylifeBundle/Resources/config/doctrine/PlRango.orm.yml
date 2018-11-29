@@ -1,0 +1,111 @@
+PylifeBundle\Entity\PlRango:
+    type: entity
+    table: pl_rango
+    indexes:
+        fk_pl_user_pl_rango_created_idx:
+            columns:
+                - ra_usr_created_by
+        fk_pl_user_pl_rango_updated_idx:
+            columns:
+                - ra_usr_updated_by
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        raNombre:
+            type: string
+            nullable: false
+            length: 100
+            options:
+                fixed: false
+            column: ra_nombre
+        raDescuentoMin:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: ra_descuento_min
+        raDescuentoMax:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: ra_descuento_max
+        raPuntosMin:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: ra_puntos_min
+        raPuntosMax:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: ra_puntos_max
+        raCantSupervisores:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: ra_cant_supervisores
+        raPosicion:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: ra_posicion
+        raTiempoConsecutivo:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: ra_tiempo_consecutivo
+        raTipoTiempo:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: ra_tipo_tiempo
+        raCreatedAt:
+            type: datetime
+            nullable: false
+            column: ra_created_at
+        raUpdatedAt:
+            type: datetime
+            nullable: true
+            column: ra_updated_at
+        raActive:
+            type: boolean
+            nullable: false
+            options:
+                default: '1'
+            column: ra_active
+    manyToOne:
+        raUsrCreatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                ra_usr_created_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+        raUsrUpdatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                ra_usr_updated_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

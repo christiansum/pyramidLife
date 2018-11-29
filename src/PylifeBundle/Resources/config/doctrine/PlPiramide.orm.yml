@@ -1,0 +1,80 @@
+PylifeBundle\Entity\PlPiramide:
+    type: entity
+    table: pl_piramide
+    indexes:
+        fk_pl_user_pl_piramide_child_idx:
+            columns:
+                - py_usr_id_child
+        fk_pl_user_pl_piramide_parent_idx:
+            columns:
+                - py_usr_id_parent
+        fk_pl_user_pl_piramide_created_idx:
+            columns:
+                - py_usr_created_by
+        fk_pl_user_pl_piramide_updated_idx:
+            columns:
+                - py_usr_updated_by
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        pyCreatedAt:
+            type: datetime
+            nullable: false
+            column: py_created_at
+        pyUpdatedAt:
+            type: datetime
+            nullable: true
+            column: py_updated_at
+        pyActive:
+            type: boolean
+            nullable: false
+            column: py_active
+    manyToOne:
+        pyUsrChild:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                py_usr_id_child:
+                    referencedColumnName: id
+            orphanRemoval: false
+        pyUsrCreatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                py_usr_created_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+        pyUsrParent:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                py_usr_id_parent:
+                    referencedColumnName: id
+            orphanRemoval: false
+        pyUsrUpdatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                py_usr_updated_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

@@ -1,0 +1,94 @@
+PylifeBundle\Entity\PlVentaDetalle:
+    type: entity
+    table: pl_venta_detalle
+    indexes:
+        fk_pl_inventario_pl_venta_detalle_idx:
+            columns:
+                - vd_id_inv
+        fk_pl_venta_pl_venta_detalle_idx:
+            columns:
+                - vd_id_ven
+        fk_pl_user_pl_venta_detalle_created_idx:
+            columns:
+                - vd_usr_created_by
+        fk_pl_user_pl_venta_detalle_updated_idx:
+            columns:
+                - vd_usr_updated_by
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        vdCantidadVendida:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: vd_cantidad_vendida
+        vdSumaPuntos:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: vd_suma_puntos
+        vdCreatedAt:
+            type: datetime
+            nullable: false
+            column: vd_created_at
+        vdUpdatedAt:
+            type: datetime
+            nullable: true
+            column: vd_updated_at
+        vdActive:
+            type: boolean
+            nullable: false
+            options:
+                default: '1'
+            column: vd_active
+    manyToOne:
+        vdInv:
+            targetEntity: PlInventario
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                vd_id_inv:
+                    referencedColumnName: id
+            orphanRemoval: false
+        vdUsrCreatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                vd_usr_created_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+        vdUsrUpdatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                vd_usr_updated_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+        vdVen:
+            targetEntity: PlVenta
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                vd_id_ven:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

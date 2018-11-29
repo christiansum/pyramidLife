@@ -1,0 +1,70 @@
+PylifeBundle\Entity\PlPais:
+    type: entity
+    table: pl_pais
+    indexes:
+        fk_pl_user_pl_pais_created_idx:
+            columns:
+                - pa_usr_created_by
+        fk_pl_user_pl_pais_updated_idx:
+            columns:
+                - pa_usr_updated_by
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        paNombre:
+            type: string
+            nullable: false
+            length: 50
+            options:
+                fixed: false
+            column: pa_nombre
+        paCodigoArea:
+            type: string
+            nullable: false
+            length: 10
+            options:
+                fixed: false
+            column: pa_codigo_area
+        paCreatedAt:
+            type: datetime
+            nullable: false
+            column: pa_created_at
+        paUpdatedAt:
+            type: datetime
+            nullable: true
+            column: pa_updated_at
+        paActive:
+            type: boolean
+            nullable: false
+            options:
+                default: '1'
+            column: pa_active
+    manyToOne:
+        paUsrCreatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                pa_usr_created_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+        paUsrUpdatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                pa_usr_updated_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

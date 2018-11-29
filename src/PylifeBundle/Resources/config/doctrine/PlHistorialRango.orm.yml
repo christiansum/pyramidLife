@@ -1,0 +1,95 @@
+PylifeBundle\Entity\PlHistorialRango:
+    type: entity
+    table: pl_historial_rango
+    indexes:
+        fk_pl_user_pl_historial_rango_idx:
+            columns:
+                - hira_usr_id
+        fk_pl_rango_pl_historial_rango_old_idx:
+            columns:
+                - hira_ra_id_anterior
+        fk_pl_rango_pl_historial_rango_new_idx:
+            columns:
+                - hira_ra_id_nuevo
+        fk_pl_user_pl_historial_rango_created_idx:
+            columns:
+                - hira_usr_created_by
+        fk_pl_user_pl_historial_rango_updated_idx:
+            columns:
+                - hira_usr_updated_by
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        hiraCreatedAt:
+            type: datetime
+            nullable: false
+            column: hira_created_at
+        hiraUpdatedAt:
+            type: datetime
+            nullable: true
+            column: hira_updated_at
+        hiraActive:
+            type: boolean
+            nullable: false
+            options:
+                default: '1'
+            column: hira_active
+    manyToOne:
+        hiraRaNuevo:
+            targetEntity: PlRango
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                hira_ra_id_nuevo:
+                    referencedColumnName: id
+            orphanRemoval: false
+        hiraRaAnterior:
+            targetEntity: PlRango
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                hira_ra_id_anterior:
+                    referencedColumnName: id
+            orphanRemoval: false
+        hiraUsr:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                hira_usr_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        hiraUsrCreatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                hira_usr_created_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+        hiraUsrUpdatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                hira_usr_updated_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

@@ -1,0 +1,74 @@
+PylifeBundle\Entity\PlPremio:
+    type: entity
+    table: pl_premio
+    indexes:
+        fk_pl_pais_pl_premio_idx:
+            columns:
+                - pre_pa_id
+        fk_pl_user_pl_premio_created_idx:
+            columns:
+                - pre_usr_created_by
+        fk_pl_user_pl_premio_updated_idx:
+            columns:
+                - pre_usr_updated_by
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        preNombre:
+            type: string
+            nullable: true
+            length: 60
+            options:
+                fixed: false
+            column: pre_nombre
+        preCreatedAt:
+            type: datetime
+            nullable: false
+            column: pre_created_at
+        preUpdatedAt:
+            type: datetime
+            nullable: true
+            column: pre_updated_at
+        preActive:
+            type: boolean
+            nullable: false
+            column: pre_active
+    manyToOne:
+        prePa:
+            targetEntity: PlPais
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                pre_pa_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        preUsrCreatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                pre_usr_created_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+        preUsrUpdatedBy:
+            targetEntity: PlUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                pre_usr_updated_by:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }
