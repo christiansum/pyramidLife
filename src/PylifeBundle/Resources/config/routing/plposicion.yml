@@ -1,0 +1,24 @@
+posicion_index:
+    path:     /
+    defaults: { _controller: "PylifeBundle:PlPosicion:index" }
+    methods:  GET
+
+posicion_show:
+    path:     /{id}/show
+    defaults: { _controller: "PylifeBundle:PlPosicion:show" }
+    methods:  GET
+
+posicion_new:
+    path:     /new
+    defaults: { _controller: "PylifeBundle:PlPosicion:new" }
+    methods:  [GET, POST]
+
+posicion_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "PylifeBundle:PlPosicion:edit" }
+    methods:  [GET, POST]
+
+posicion_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "PylifeBundle:PlPosicion:delete" }
+    methods:  DELETE

@@ -1,3 +1,15 @@
+pylife_posicion:
+    resource: "@PylifeBundle/Resources/config/routing/plposicion.yml"
+    prefix:   /posicion
+    
+pylife_premio:
+    resource: "@PylifeBundle/Resources/config/routing/plpremio.yml"
+    prefix:   /premio
+
+pylife_periopre:
+    resource: "@PylifeBundle/Resources/config/routing/plperiodopremio.yml"
+    prefix:   /periopre
+
 pylife_moneda:
     resource: "@PylifeBundle/Resources/config/routing/plmoneda.yml"
     prefix:   /moneda

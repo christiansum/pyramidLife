@@ -1,0 +1,117 @@
+    {% extends 'PylifeBundle::header.html.twig' %}
+
+    {% block body %}
+    <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+        <div class="row">
+            <ol class="breadcrumb">
+                <li><a href="{{path('pylife_homepage')}}"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
+                <li class="active">Home</li>
+            </ol>
+        </div><!--/.row-->
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Plperiodopremios list</h1>
+            </div>
+        </div><!--/.row-->
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">DescripcionModulo</div>
+                    <div class="panel-body">
+                        <div class="col-md-12">
+
+                            <table data-toggle="table">
+                                <thead>
+                                <tr>
+                                        <th>Id</th>
+                                        <th>Ppnombre</th>
+                                        <th>Ppfechainicial</th>
+                                        <th>Ppfechafinal</th>
+                                        <th>Ppcreatedat</th>
+                                        <th>Ppupdatedat</th>
+                                        <th>Ppactive</th>
+                                    <th>Actions</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for plPeriodoPremio in plPeriodoPremios %}
+                                <tr>
+                                            <td><a href="{{ path('periopre_show', { 'id': plPeriodoPremio.id }) }}">{{ plPeriodoPremio.id }}</a></td>
+                                            <td>{{ plPeriodoPremio.ppNombre }}</td>
+                                            <td>{% if plPeriodoPremio.ppFechaInicial %}{{ plPeriodoPremio.ppFechaInicial|date('Y-m-d') }}{% endif %}</td>
+                                            <td>{% if plPeriodoPremio.ppFechaFinal %}{{ plPeriodoPremio.ppFechaFinal|date('Y-m-d') }}{% endif %}</td>
+                                            <td>{% if plPeriodoPremio.ppCreatedAt %}{{ plPeriodoPremio.ppCreatedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                                            <td>{% if plPeriodoPremio.ppUpdatedAt %}{{ plPeriodoPremio.ppUpdatedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                                            <td>{% if plPeriodoPremio.ppActive %}Yes{% else %}No{% endif %}</td>
+                                            <td>
+                                                <ul>
+                                                        <li>
+                                                            <a href="{{ path('periopre_show', { 'id': plPeriodoPremio.id }) }}">show</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="{{ path('periopre_edit', { 'id': plPeriodoPremio.id }) }}">edit</a>
+                                                        </li>
+                                                </ul>
+                                            </td>
+                                </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+
+                            <ul>
+                                    <li>
+                                        <a href="{{ path('periopre_new') }}">Create a new plPeriodoPremio</a>
+                                    </li>
+                                </ul>                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.col-->
+    </div><!-- /.row -->
+    <script>
+	    $(function () {
+		    $('#hover, #striped, #condensed').click(function () {
+			    var classes = 'table';
+
+			    if ($('#hover').prop('checked')) {
+				    classes += ' table-hover';
+			    }
+			    if ($('#condensed').prop('checked')) {
+				    classes += ' table-condensed';
+			    }
+			    $('#table-style').bootstrapTable('destroy')
+				    .bootstrapTable({
+					    classes: classes,
+					    striped: $('#striped').prop('checked')
+				    });
+		    });
+	    });
+
+	    function rowStyle(row, index) {
+		    var classes = ['active', 'success', 'info', 'warning', 'danger'];
+
+		    if (index % 2 === 0 && index / 2 < classes.length) {
+			    return {
+				    classes: classes[index / 2]
+			    };
+		    }
+		    return {};
+	    }
+	    !function ($) {
+		    $(document).on("click","ul.nav li.parent > a > span.icon", function(){
+			    $(this).find('em:first').toggleClass("glyphicon-minus");
+		    });
+		    $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+	    }(window.jQuery);
+
+	    $(window).on('resize', function () {
+		    if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+	    })
+	    $(window).on('resize', function () {
+		    if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+	    })
+    </script>
+
+    {% endblock %}
