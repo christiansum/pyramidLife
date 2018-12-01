@@ -1,0 +1,24 @@
+tipena_index:
+    path:     /
+    defaults: { _controller: "PylifeBundle:PlTipoPenalizacion:index" }
+    methods:  GET
+
+tipena_show:
+    path:     /{id}/show
+    defaults: { _controller: "PylifeBundle:PlTipoPenalizacion:show" }
+    methods:  GET
+
+tipena_new:
+    path:     /new
+    defaults: { _controller: "PylifeBundle:PlTipoPenalizacion:new" }
+    methods:  [GET, POST]
+
+tipena_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "PylifeBundle:PlTipoPenalizacion:edit" }
+    methods:  [GET, POST]
+
+tipena_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "PylifeBundle:PlTipoPenalizacion:delete" }
+    methods:  DELETE

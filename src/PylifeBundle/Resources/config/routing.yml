@@ -1,3 +1,11 @@
+pylife_tipena:
+    resource: "@PylifeBundle/Resources/config/routing/pltipopenalizacion.yml"
+    prefix:   /tipena
+
+pylife_penali:
+    resource: "@PylifeBundle/Resources/config/routing/plpenalizacion.yml"
+    prefix:   /penali
+
 pylife_venta:
     resource: "@PylifeBundle/Resources/config/routing/plventa.yml"
     prefix:   /venta

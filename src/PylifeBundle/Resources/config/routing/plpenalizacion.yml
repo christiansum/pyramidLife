@@ -1,0 +1,24 @@
+penali_index:
+    path:     /
+    defaults: { _controller: "PylifeBundle:PlPenalizacion:index" }
+    methods:  GET
+
+penali_show:
+    path:     /{id}/show
+    defaults: { _controller: "PylifeBundle:PlPenalizacion:show" }
+    methods:  GET
+
+penali_new:
+    path:     /new
+    defaults: { _controller: "PylifeBundle:PlPenalizacion:new" }
+    methods:  [GET, POST]
+
+penali_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "PylifeBundle:PlPenalizacion:edit" }
+    methods:  [GET, POST]
+
+penali_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "PylifeBundle:PlPenalizacion:delete" }
+    methods:  DELETE
