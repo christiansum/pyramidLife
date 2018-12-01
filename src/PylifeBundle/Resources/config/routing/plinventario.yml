@@ -1,0 +1,24 @@
+inventario_index:
+    path:     /
+    defaults: { _controller: "PylifeBundle:PlInventario:index" }
+    methods:  GET
+
+inventario_show:
+    path:     /{id}/show
+    defaults: { _controller: "PylifeBundle:PlInventario:show" }
+    methods:  GET
+
+inventario_new:
+    path:     /new
+    defaults: { _controller: "PylifeBundle:PlInventario:new" }
+    methods:  [GET, POST]
+
+inventario_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "PylifeBundle:PlInventario:edit" }
+    methods:  [GET, POST]
+
+inventario_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "PylifeBundle:PlInventario:delete" }
+    methods:  DELETE

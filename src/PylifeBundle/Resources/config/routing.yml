@@ -1,3 +1,7 @@
+pylife_inventario:
+    resource: "@PylifeBundle/Resources/config/routing/plinventario.yml"
+    prefix:   /inventario
+
 pylife_pais:
     resource: "@PylifeBundle/Resources/config/routing/plpais.yml"
     prefix:   /pais
