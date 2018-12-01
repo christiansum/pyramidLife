@@ -1,0 +1,24 @@
+arbol_index:
+    path:     /
+    defaults: { _controller: "PylifeBundle:PlPiramide:index" }
+    methods:  GET
+
+arbol_show:
+    path:     /{id}/show
+    defaults: { _controller: "PylifeBundle:PlPiramide:show" }
+    methods:  GET
+
+arbol_new:
+    path:     /new
+    defaults: { _controller: "PylifeBundle:PlPiramide:new" }
+    methods:  [GET, POST]
+
+arbol_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "PylifeBundle:PlPiramide:edit" }
+    methods:  [GET, POST]
+
+arbol_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "PylifeBundle:PlPiramide:delete" }
+    methods:  DELETE

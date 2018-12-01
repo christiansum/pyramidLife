@@ -1,0 +1,24 @@
+rangos_index:
+    path:     /
+    defaults: { _controller: "PylifeBundle:PlRango:index" }
+    methods:  GET
+
+rangos_show:
+    path:     /{id}/show
+    defaults: { _controller: "PylifeBundle:PlRango:show" }
+    methods:  GET
+
+rangos_new:
+    path:     /new
+    defaults: { _controller: "PylifeBundle:PlRango:new" }
+    methods:  [GET, POST]
+
+rangos_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "PylifeBundle:PlRango:edit" }
+    methods:  [GET, POST]
+
+rangos_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "PylifeBundle:PlRango:delete" }
+    methods:  DELETE

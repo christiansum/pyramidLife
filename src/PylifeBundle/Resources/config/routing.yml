@@ -1,3 +1,19 @@
+pylife_arbol:
+    resource: "@PylifeBundle/Resources/config/routing/plpiramide.yml"
+    prefix:   /arbol
+
+pylife_rangos:
+    resource: "@PylifeBundle/Resources/config/routing/plrango.yml"
+    prefix:   /rangos
+
+pylife_roles:
+    resource: "@PylifeBundle/Resources/config/routing/plrole.yml"
+    prefix:   /roles
+
+pylife_usuarios:
+    resource: "@PylifeBundle/Resources/config/routing/pluser.yml"
+    prefix:   /usuarios
+
 pylife_tipena:
     resource: "@PylifeBundle/Resources/config/routing/pltipopenalizacion.yml"
     prefix:   /tipena

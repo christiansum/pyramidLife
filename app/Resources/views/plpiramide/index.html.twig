@@ -1,0 +1,111 @@
+    {% extends 'PylifeBundle::header.html.twig' %}
+
+    {% block body %}
+    <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+        <div class="row">
+            <ol class="breadcrumb">
+                <li><a href="{{path('pylife_homepage')}}"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
+                <li class="active">Home</li>
+            </ol>
+        </div><!--/.row-->
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Plpiramides list</h1>
+            </div>
+        </div><!--/.row-->
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">DescripcionModulo</div>
+                    <div class="panel-body">
+                        <div class="col-md-12">
+
+                            <table data-toggle="table">
+                                <thead>
+                                <tr>
+                                        <th>Id</th>
+                                        <th>Pycreatedat</th>
+                                        <th>Pyupdatedat</th>
+                                        <th>Pyactive</th>
+                                    <th>Actions</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for plPiramide in plPiramides %}
+                                <tr>
+                                            <td><a href="{{ path('arbol_show', { 'id': plPiramide.id }) }}">{{ plPiramide.id }}</a></td>
+                                            <td>{% if plPiramide.pyCreatedAt %}{{ plPiramide.pyCreatedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                                            <td>{% if plPiramide.pyUpdatedAt %}{{ plPiramide.pyUpdatedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                                            <td>{% if plPiramide.pyActive %}Yes{% else %}No{% endif %}</td>
+                                            <td>
+                                                <ul>
+                                                        <li>
+                                                            <a href="{{ path('arbol_show', { 'id': plPiramide.id }) }}">show</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="{{ path('arbol_edit', { 'id': plPiramide.id }) }}">edit</a>
+                                                        </li>
+                                                </ul>
+                                            </td>
+                                </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+
+                            <ul>
+                                    <li>
+                                        <a href="{{ path('arbol_new') }}">Create a new plPiramide</a>
+                                    </li>
+                                </ul>                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.col-->
+    </div><!-- /.row -->
+    <script>
+	    $(function () {
+		    $('#hover, #striped, #condensed').click(function () {
+			    var classes = 'table';
+
+			    if ($('#hover').prop('checked')) {
+				    classes += ' table-hover';
+			    }
+			    if ($('#condensed').prop('checked')) {
+				    classes += ' table-condensed';
+			    }
+			    $('#table-style').bootstrapTable('destroy')
+				    .bootstrapTable({
+					    classes: classes,
+					    striped: $('#striped').prop('checked')
+				    });
+		    });
+	    });
+
+	    function rowStyle(row, index) {
+		    var classes = ['active', 'success', 'info', 'warning', 'danger'];
+
+		    if (index % 2 === 0 && index / 2 < classes.length) {
+			    return {
+				    classes: classes[index / 2]
+			    };
+		    }
+		    return {};
+	    }
+	    !function ($) {
+		    $(document).on("click","ul.nav li.parent > a > span.icon", function(){
+			    $(this).find('em:first').toggleClass("glyphicon-minus");
+		    });
+		    $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+	    }(window.jQuery);
+
+	    $(window).on('resize', function () {
+		    if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+	    })
+	    $(window).on('resize', function () {
+		    if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+	    })
+    </script>
+
+    {% endblock %}
