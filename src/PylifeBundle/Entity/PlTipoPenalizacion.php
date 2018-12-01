@@ -61,7 +61,7 @@ class PlTipoPenalizacion
      *
      * @ORM\Column(name="pti_active", type="boolean", nullable=false)
      */
-    private $ptiActive = '1';
+    private $ptiActive = true;
 
     /**
      * @var \PylifeBundle\Entity\PlUser

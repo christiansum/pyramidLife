@@ -40,7 +40,7 @@ class PlPiramide
      *
      * @ORM\Column(name="py_active", type="boolean", nullable=false)
      */
-    private $pyActive;
+    private $pyActive =true;
 
     /**
      * @var \PylifeBundle\Entity\PlUser

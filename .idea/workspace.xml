@@ -2,43 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6f29f99-2ca5-4627-8c2b-015ca19dc7b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/PylifeBundle/Resources/public/css/bootstrap-datetimepicker.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PylifeBundle/Resources/public/css/jquery-ui.theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PylifeBundle/Resources/public/js/bootstrap-datetimepicker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PylifeBundle/Resources/public/js/moment-duration-format.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PylifeBundle/Resources/public/js/moment-with-locales.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PylifeBundle/Resources/public/js/moment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.en.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/ChangePassword/changePassword_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/ChangePassword/changePassword_content.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/edit_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/edit_content.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/list_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/list_content.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/new_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/new_content.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/show_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/show_content.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/edit_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/edit_content.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/checkEmail.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/checkEmail.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/confirmed.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/confirmed.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/email.txt.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/email.txt.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/checkEmail.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/checkEmail.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/email.txt.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/email.txt.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/passwordAlreadyRequested.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/passwordAlreadyRequested.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/request_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/request_content.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/reset_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/reset_content.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/plpais/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/plpais/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/plpais/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/plpais/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/plpais/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/plpais/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/plpais/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/plpais/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Controller/PlPaisController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Controller/PlPaisController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlHistorialRango.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlHistorialRango.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlInventario.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlInventario.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlMoneda.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlMoneda.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlPais.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlPais.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlPenalizacion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlPenalizacion.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlPeriodoPremio.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlPeriodoPremio.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlPiramide.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlPiramide.php" afterDir="false" />
@@ -49,14 +15,9 @@
       <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlRole.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlRole.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlRoleUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlRoleUser.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlTipoPenalizacion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlTipoPenalizacion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlUser.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlVenta.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlVenta.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlVentaDetalle.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlVentaDetalle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Form/PlPaisType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Form/PlPaisType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Resources/config/routing.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Resources/public/css/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Resources/public/css/jquery-ui.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Resources/public/css/jquery-ui.structure.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Resources/public/css/jquery-ui.structure.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Resources/public/js/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Resources/public/js/jquery-ui.min.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -114,11 +75,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="57" lean-forward="true" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+            <state relative-caret-position="315">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Entity/PlPiramide.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -140,15 +110,6 @@
               <folding>
                 <element signature="e#37#77#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Entity/PlPais.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -184,11 +145,16 @@
       <find>Plpai(</find>
       <find>active</find>
       <find>redirectToRoute</find>
+      <find>'1'</find>
     </findStrings>
     <replaceStrings>
       <replace>bundles/pylife</replace>
       <replace>$plPais,</replace>
+      <replace>true</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>C:\xampp\htdocs\pyramidLife\src\PylifeBundle\Entity</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -223,6 +189,8 @@
         <option value="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/views/edit.html.twig.twig" />
         <option value="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/views/show.html.twig.twig" />
         <option value="$PROJECT_DIR$/src/PylifeBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/PylifeBundle/Entity/PlPremio.php" />
+        <option value="$PROJECT_DIR$/src/PylifeBundle/Entity/PlPiramide.php" />
       </list>
     </option>
   </component>
@@ -489,12 +457,12 @@
       <workItem from="1543168862390" duration="305000" />
       <workItem from="1543169709349" duration="32489000" />
       <workItem from="1543506761523" duration="15054000" />
-      <workItem from="1543590558156" duration="10529000" />
+      <workItem from="1543590558156" duration="13558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58377000" />
+    <option name="totallyTimeSpent" value="61406000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-199" width="1936" height="1056" extended-state="6" />
@@ -802,10 +770,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Entity/PlPremio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="57" lean-forward="true" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+        <state relative-caret-position="315">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Entity/PlPiramide.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
         </state>
       </provider>
     </entry>

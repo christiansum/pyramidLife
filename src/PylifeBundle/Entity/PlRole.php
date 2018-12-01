@@ -47,7 +47,7 @@ class PlRole
      *
      * @ORM\Column(name="rol_active", type="boolean", nullable=false)
      */
-    private $rolActive = '1';
+    private $rolActive = true;
 
     /**
      * @var \PylifeBundle\Entity\PlUser

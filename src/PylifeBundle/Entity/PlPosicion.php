@@ -61,7 +61,7 @@ class PlPosicion
      *
      * @ORM\Column(name="pos_active", type="boolean", nullable=false)
      */
-    private $posActive = '1';
+    private $posActive = true;
 
     /**
      * @var \PylifeBundle\Entity\PlMoneda

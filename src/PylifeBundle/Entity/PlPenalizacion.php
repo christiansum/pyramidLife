@@ -54,7 +54,7 @@ class PlPenalizacion
      *
      * @ORM\Column(name="pna_active", type="boolean", nullable=false)
      */
-    private $pnaActive = '1';
+    private $pnaActive = true;
 
     /**
      * @var \PylifeBundle\Entity\PlTipoPenalizacion

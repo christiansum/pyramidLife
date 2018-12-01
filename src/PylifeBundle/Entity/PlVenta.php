@@ -40,7 +40,7 @@ class PlVenta
      *
      * @ORM\Column(name="ven_active", type="boolean", nullable=false)
      */
-    private $venActive = '1';
+    private $venActive = true;
 
     /**
      * @var \PylifeBundle\Entity\PlPais

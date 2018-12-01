@@ -54,7 +54,7 @@ class PlInventario
      *
      * @ORM\Column(name="inv_active", type="boolean", nullable=false)
      */
-    private $invActive = '1';
+    private $invActive = true;
 
     /**
      * @var \PylifeBundle\Entity\PlProducto

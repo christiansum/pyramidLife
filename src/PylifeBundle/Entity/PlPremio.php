@@ -47,7 +47,7 @@ class PlPremio
      *
      * @ORM\Column(name="pre_active", type="boolean", nullable=false)
      */
-    private $preActive;
+    private $preActive=true;
 
     /**
      * @var \PylifeBundle\Entity\PlPais

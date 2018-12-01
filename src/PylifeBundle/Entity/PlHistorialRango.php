@@ -40,7 +40,7 @@ class PlHistorialRango
      *
      * @ORM\Column(name="hira_active", type="boolean", nullable=false)
      */
-    private $hiraActive = '1';
+    private $hiraActive = true;
 
     /**
      * @var \PylifeBundle\Entity\PlRango

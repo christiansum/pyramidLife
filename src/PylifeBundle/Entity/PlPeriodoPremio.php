@@ -61,7 +61,7 @@ class PlPeriodoPremio
      *
      * @ORM\Column(name="pp_active", type="boolean", nullable=false)
      */
-    private $ppActive = '1';
+    private $ppActive = true;
 
     /**
      * @var \PylifeBundle\Entity\PlUser

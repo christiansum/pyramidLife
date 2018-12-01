@@ -54,7 +54,7 @@ class PlMoneda
      *
      * @ORM\Column(name="mo_active", type="boolean", nullable=false)
      */
-    private $moActive = '1';
+    private $moActive = true;
 
     /**
      * @var \PylifeBundle\Entity\PlUser

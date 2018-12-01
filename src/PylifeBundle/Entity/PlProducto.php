@@ -61,7 +61,7 @@ class PlProducto
      *
      * @ORM\Column(name="pro_active", type="boolean", nullable=false)
      */
-    private $proActive = '1';
+    private $proActive = true;
 
     /**
      * @var \PylifeBundle\Entity\PlMoneda

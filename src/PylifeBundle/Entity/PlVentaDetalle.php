@@ -54,7 +54,7 @@ class PlVentaDetalle
      *
      * @ORM\Column(name="vd_active", type="boolean", nullable=false)
      */
-    private $vdActive = '1';
+    private $vdActive = true;
 
     /**
      * @var \PylifeBundle\Entity\PlInventario

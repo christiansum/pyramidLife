@@ -103,7 +103,7 @@ class PlRango
      *
      * @ORM\Column(name="ra_active", type="boolean", nullable=false)
      */
-    private $raActive = '1';
+    private $raActive = true;
 
     /**
      * @var \PylifeBundle\Entity\PlUser
