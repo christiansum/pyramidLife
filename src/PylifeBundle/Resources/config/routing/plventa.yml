@@ -1,0 +1,24 @@
+venta_index:
+    path:     /
+    defaults: { _controller: "PylifeBundle:PlVenta:index" }
+    methods:  GET
+
+venta_show:
+    path:     /{id}/show
+    defaults: { _controller: "PylifeBundle:PlVenta:show" }
+    methods:  GET
+
+venta_new:
+    path:     /new
+    defaults: { _controller: "PylifeBundle:PlVenta:new" }
+    methods:  [GET, POST]
+
+venta_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "PylifeBundle:PlVenta:edit" }
+    methods:  [GET, POST]
+
+venta_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "PylifeBundle:PlVenta:delete" }
+    methods:  DELETE

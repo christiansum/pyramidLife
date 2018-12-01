@@ -1,7 +1,15 @@
+pylife_venta:
+    resource: "@PylifeBundle/Resources/config/routing/plventa.yml"
+    prefix:   /venta
+
+pylife_producto:
+    resource: "@PylifeBundle/Resources/config/routing/plproducto.yml"
+    prefix:   /producto
+
 pylife_posicion:
     resource: "@PylifeBundle/Resources/config/routing/plposicion.yml"
     prefix:   /posicion
-    
+
 pylife_premio:
     resource: "@PylifeBundle/Resources/config/routing/plpremio.yml"
     prefix:   /premio
