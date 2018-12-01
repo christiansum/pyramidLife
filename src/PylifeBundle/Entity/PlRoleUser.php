@@ -83,5 +83,182 @@ class PlRoleUser
     private $ruUsrUpdatedBy;
 
 
-}
 
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set ruCreatedAt
+     *
+     * @param \DateTime $ruCreatedAt
+     *
+     * @return PlRoleUser
+     */
+    public function setRuCreatedAt($ruCreatedAt)
+    {
+        $this->ruCreatedAt = $ruCreatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get ruCreatedAt
+     *
+     * @return \DateTime
+     */
+    public function getRuCreatedAt()
+    {
+        return $this->ruCreatedAt;
+    }
+
+    /**
+     * Set ruUpdatedAt
+     *
+     * @param \DateTime $ruUpdatedAt
+     *
+     * @return PlRoleUser
+     */
+    public function setRuUpdatedAt($ruUpdatedAt)
+    {
+        $this->ruUpdatedAt = $ruUpdatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get ruUpdatedAt
+     *
+     * @return \DateTime
+     */
+    public function getRuUpdatedAt()
+    {
+        return $this->ruUpdatedAt;
+    }
+
+    /**
+     * Set ruActive
+     *
+     * @param boolean $ruActive
+     *
+     * @return PlRoleUser
+     */
+    public function setRuActive($ruActive)
+    {
+        $this->ruActive = $ruActive;
+
+        return $this;
+    }
+
+    /**
+     * Get ruActive
+     *
+     * @return boolean
+     */
+    public function getRuActive()
+    {
+        return $this->ruActive;
+    }
+
+    /**
+     * Set ruRol
+     *
+     * @param \PylifeBundle\Entity\PlRole $ruRol
+     *
+     * @return PlRoleUser
+     */
+    public function setRuRol(\PylifeBundle\Entity\PlRole $ruRol = null)
+    {
+        $this->ruRol = $ruRol;
+
+        return $this;
+    }
+
+    /**
+     * Get ruRol
+     *
+     * @return \PylifeBundle\Entity\PlRole
+     */
+    public function getRuRol()
+    {
+        return $this->ruRol;
+    }
+
+    /**
+     * Set ruUsr
+     *
+     * @param \PylifeBundle\Entity\PlUser $ruUsr
+     *
+     * @return PlRoleUser
+     */
+    public function setRuUsr(\PylifeBundle\Entity\PlUser $ruUsr = null)
+    {
+        $this->ruUsr = $ruUsr;
+
+        return $this;
+    }
+
+    /**
+     * Get ruUsr
+     *
+     * @return \PylifeBundle\Entity\PlUser
+     */
+    public function getRuUsr()
+    {
+        return $this->ruUsr;
+    }
+
+    /**
+     * Set ruUsrCreatedBy
+     *
+     * @param \PylifeBundle\Entity\PlUser $ruUsrCreatedBy
+     *
+     * @return PlRoleUser
+     */
+    public function setRuUsrCreatedBy(\PylifeBundle\Entity\PlUser $ruUsrCreatedBy = null)
+    {
+        $this->ruUsrCreatedBy = $ruUsrCreatedBy;
+
+        return $this;
+    }
+
+    /**
+     * Get ruUsrCreatedBy
+     *
+     * @return \PylifeBundle\Entity\PlUser
+     */
+    public function getRuUsrCreatedBy()
+    {
+        return $this->ruUsrCreatedBy;
+    }
+
+    /**
+     * Set ruUsrUpdatedBy
+     *
+     * @param \PylifeBundle\Entity\PlUser $ruUsrUpdatedBy
+     *
+     * @return PlRoleUser
+     */
+    public function setRuUsrUpdatedBy(\PylifeBundle\Entity\PlUser $ruUsrUpdatedBy = null)
+    {
+        $this->ruUsrUpdatedBy = $ruUsrUpdatedBy;
+
+        return $this;
+    }
+
+    /**
+     * Get ruUsrUpdatedBy
+     *
+     * @return \PylifeBundle\Entity\PlUser
+     */
+    public function getRuUsrUpdatedBy()
+    {
+        return $this->ruUsrUpdatedBy;
+    }
+}

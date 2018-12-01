@@ -83,5 +83,182 @@ class PlVenta
     private $venUsrUpdatedBy;
 
 
-}
 
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set venCreatedAt
+     *
+     * @param \DateTime $venCreatedAt
+     *
+     * @return PlVenta
+     */
+    public function setVenCreatedAt($venCreatedAt)
+    {
+        $this->venCreatedAt = $venCreatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get venCreatedAt
+     *
+     * @return \DateTime
+     */
+    public function getVenCreatedAt()
+    {
+        return $this->venCreatedAt;
+    }
+
+    /**
+     * Set venUpdatedAt
+     *
+     * @param \DateTime $venUpdatedAt
+     *
+     * @return PlVenta
+     */
+    public function setVenUpdatedAt($venUpdatedAt)
+    {
+        $this->venUpdatedAt = $venUpdatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get venUpdatedAt
+     *
+     * @return \DateTime
+     */
+    public function getVenUpdatedAt()
+    {
+        return $this->venUpdatedAt;
+    }
+
+    /**
+     * Set venActive
+     *
+     * @param boolean $venActive
+     *
+     * @return PlVenta
+     */
+    public function setVenActive($venActive)
+    {
+        $this->venActive = $venActive;
+
+        return $this;
+    }
+
+    /**
+     * Get venActive
+     *
+     * @return boolean
+     */
+    public function getVenActive()
+    {
+        return $this->venActive;
+    }
+
+    /**
+     * Set venPa
+     *
+     * @param \PylifeBundle\Entity\PlPais $venPa
+     *
+     * @return PlVenta
+     */
+    public function setVenPa(\PylifeBundle\Entity\PlPais $venPa = null)
+    {
+        $this->venPa = $venPa;
+
+        return $this;
+    }
+
+    /**
+     * Get venPa
+     *
+     * @return \PylifeBundle\Entity\PlPais
+     */
+    public function getVenPa()
+    {
+        return $this->venPa;
+    }
+
+    /**
+     * Set venUsr
+     *
+     * @param \PylifeBundle\Entity\PlUser $venUsr
+     *
+     * @return PlVenta
+     */
+    public function setVenUsr(\PylifeBundle\Entity\PlUser $venUsr = null)
+    {
+        $this->venUsr = $venUsr;
+
+        return $this;
+    }
+
+    /**
+     * Get venUsr
+     *
+     * @return \PylifeBundle\Entity\PlUser
+     */
+    public function getVenUsr()
+    {
+        return $this->venUsr;
+    }
+
+    /**
+     * Set venUsrCreatedBy
+     *
+     * @param \PylifeBundle\Entity\PlUser $venUsrCreatedBy
+     *
+     * @return PlVenta
+     */
+    public function setVenUsrCreatedBy(\PylifeBundle\Entity\PlUser $venUsrCreatedBy = null)
+    {
+        $this->venUsrCreatedBy = $venUsrCreatedBy;
+
+        return $this;
+    }
+
+    /**
+     * Get venUsrCreatedBy
+     *
+     * @return \PylifeBundle\Entity\PlUser
+     */
+    public function getVenUsrCreatedBy()
+    {
+        return $this->venUsrCreatedBy;
+    }
+
+    /**
+     * Set venUsrUpdatedBy
+     *
+     * @param \PylifeBundle\Entity\PlUser $venUsrUpdatedBy
+     *
+     * @return PlVenta
+     */
+    public function setVenUsrUpdatedBy(\PylifeBundle\Entity\PlUser $venUsrUpdatedBy = null)
+    {
+        $this->venUsrUpdatedBy = $venUsrUpdatedBy;
+
+        return $this;
+    }
+
+    /**
+     * Get venUsrUpdatedBy
+     *
+     * @return \PylifeBundle\Entity\PlUser
+     */
+    public function getVenUsrUpdatedBy()
+    {
+        return $this->venUsrUpdatedBy;
+    }
+}

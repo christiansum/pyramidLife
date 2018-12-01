@@ -126,5 +126,350 @@ class PlRango
     private $raUsrUpdatedBy;
 
 
-}
 
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set raNombre
+     *
+     * @param string $raNombre
+     *
+     * @return PlRango
+     */
+    public function setRaNombre($raNombre)
+    {
+        $this->raNombre = $raNombre;
+
+        return $this;
+    }
+
+    /**
+     * Get raNombre
+     *
+     * @return string
+     */
+    public function getRaNombre()
+    {
+        return $this->raNombre;
+    }
+
+    /**
+     * Set raDescuentoMin
+     *
+     * @param integer $raDescuentoMin
+     *
+     * @return PlRango
+     */
+    public function setRaDescuentoMin($raDescuentoMin)
+    {
+        $this->raDescuentoMin = $raDescuentoMin;
+
+        return $this;
+    }
+
+    /**
+     * Get raDescuentoMin
+     *
+     * @return integer
+     */
+    public function getRaDescuentoMin()
+    {
+        return $this->raDescuentoMin;
+    }
+
+    /**
+     * Set raDescuentoMax
+     *
+     * @param integer $raDescuentoMax
+     *
+     * @return PlRango
+     */
+    public function setRaDescuentoMax($raDescuentoMax)
+    {
+        $this->raDescuentoMax = $raDescuentoMax;
+
+        return $this;
+    }
+
+    /**
+     * Get raDescuentoMax
+     *
+     * @return integer
+     */
+    public function getRaDescuentoMax()
+    {
+        return $this->raDescuentoMax;
+    }
+
+    /**
+     * Set raPuntosMin
+     *
+     * @param integer $raPuntosMin
+     *
+     * @return PlRango
+     */
+    public function setRaPuntosMin($raPuntosMin)
+    {
+        $this->raPuntosMin = $raPuntosMin;
+
+        return $this;
+    }
+
+    /**
+     * Get raPuntosMin
+     *
+     * @return integer
+     */
+    public function getRaPuntosMin()
+    {
+        return $this->raPuntosMin;
+    }
+
+    /**
+     * Set raPuntosMax
+     *
+     * @param integer $raPuntosMax
+     *
+     * @return PlRango
+     */
+    public function setRaPuntosMax($raPuntosMax)
+    {
+        $this->raPuntosMax = $raPuntosMax;
+
+        return $this;
+    }
+
+    /**
+     * Get raPuntosMax
+     *
+     * @return integer
+     */
+    public function getRaPuntosMax()
+    {
+        return $this->raPuntosMax;
+    }
+
+    /**
+     * Set raCantSupervisores
+     *
+     * @param integer $raCantSupervisores
+     *
+     * @return PlRango
+     */
+    public function setRaCantSupervisores($raCantSupervisores)
+    {
+        $this->raCantSupervisores = $raCantSupervisores;
+
+        return $this;
+    }
+
+    /**
+     * Get raCantSupervisores
+     *
+     * @return integer
+     */
+    public function getRaCantSupervisores()
+    {
+        return $this->raCantSupervisores;
+    }
+
+    /**
+     * Set raPosicion
+     *
+     * @param integer $raPosicion
+     *
+     * @return PlRango
+     */
+    public function setRaPosicion($raPosicion)
+    {
+        $this->raPosicion = $raPosicion;
+
+        return $this;
+    }
+
+    /**
+     * Get raPosicion
+     *
+     * @return integer
+     */
+    public function getRaPosicion()
+    {
+        return $this->raPosicion;
+    }
+
+    /**
+     * Set raTiempoConsecutivo
+     *
+     * @param integer $raTiempoConsecutivo
+     *
+     * @return PlRango
+     */
+    public function setRaTiempoConsecutivo($raTiempoConsecutivo)
+    {
+        $this->raTiempoConsecutivo = $raTiempoConsecutivo;
+
+        return $this;
+    }
+
+    /**
+     * Get raTiempoConsecutivo
+     *
+     * @return integer
+     */
+    public function getRaTiempoConsecutivo()
+    {
+        return $this->raTiempoConsecutivo;
+    }
+
+    /**
+     * Set raTipoTiempo
+     *
+     * @param integer $raTipoTiempo
+     *
+     * @return PlRango
+     */
+    public function setRaTipoTiempo($raTipoTiempo)
+    {
+        $this->raTipoTiempo = $raTipoTiempo;
+
+        return $this;
+    }
+
+    /**
+     * Get raTipoTiempo
+     *
+     * @return integer
+     */
+    public function getRaTipoTiempo()
+    {
+        return $this->raTipoTiempo;
+    }
+
+    /**
+     * Set raCreatedAt
+     *
+     * @param \DateTime $raCreatedAt
+     *
+     * @return PlRango
+     */
+    public function setRaCreatedAt($raCreatedAt)
+    {
+        $this->raCreatedAt = $raCreatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get raCreatedAt
+     *
+     * @return \DateTime
+     */
+    public function getRaCreatedAt()
+    {
+        return $this->raCreatedAt;
+    }
+
+    /**
+     * Set raUpdatedAt
+     *
+     * @param \DateTime $raUpdatedAt
+     *
+     * @return PlRango
+     */
+    public function setRaUpdatedAt($raUpdatedAt)
+    {
+        $this->raUpdatedAt = $raUpdatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get raUpdatedAt
+     *
+     * @return \DateTime
+     */
+    public function getRaUpdatedAt()
+    {
+        return $this->raUpdatedAt;
+    }
+
+    /**
+     * Set raActive
+     *
+     * @param boolean $raActive
+     *
+     * @return PlRango
+     */
+    public function setRaActive($raActive)
+    {
+        $this->raActive = $raActive;
+
+        return $this;
+    }
+
+    /**
+     * Get raActive
+     *
+     * @return boolean
+     */
+    public function getRaActive()
+    {
+        return $this->raActive;
+    }
+
+    /**
+     * Set raUsrCreatedBy
+     *
+     * @param \PylifeBundle\Entity\PlUser $raUsrCreatedBy
+     *
+     * @return PlRango
+     */
+    public function setRaUsrCreatedBy(\PylifeBundle\Entity\PlUser $raUsrCreatedBy = null)
+    {
+        $this->raUsrCreatedBy = $raUsrCreatedBy;
+
+        return $this;
+    }
+
+    /**
+     * Get raUsrCreatedBy
+     *
+     * @return \PylifeBundle\Entity\PlUser
+     */
+    public function getRaUsrCreatedBy()
+    {
+        return $this->raUsrCreatedBy;
+    }
+
+    /**
+     * Set raUsrUpdatedBy
+     *
+     * @param \PylifeBundle\Entity\PlUser $raUsrUpdatedBy
+     *
+     * @return PlRango
+     */
+    public function setRaUsrUpdatedBy(\PylifeBundle\Entity\PlUser $raUsrUpdatedBy = null)
+    {
+        $this->raUsrUpdatedBy = $raUsrUpdatedBy;
+
+        return $this;
+    }
+
+    /**
+     * Get raUsrUpdatedBy
+     *
+     * @return \PylifeBundle\Entity\PlUser
+     */
+    public function getRaUsrUpdatedBy()
+    {
+        return $this->raUsrUpdatedBy;
+    }
+}

@@ -68,5 +68,148 @@ class PlUser extends BaseUser
     private $usrPa;
 
 
-}
 
+    /**
+     * Set usrNombre
+     *
+     * @param string $usrNombre
+     *
+     * @return PlUser
+     */
+    public function setUsrNombre($usrNombre)
+    {
+        $this->usrNombre = $usrNombre;
+
+        return $this;
+    }
+
+    /**
+     * Get usrNombre
+     *
+     * @return string
+     */
+    public function getUsrNombre()
+    {
+        return $this->usrNombre;
+    }
+
+    /**
+     * Set usrApellido
+     *
+     * @param string $usrApellido
+     *
+     * @return PlUser
+     */
+    public function setUsrApellido($usrApellido)
+    {
+        $this->usrApellido = $usrApellido;
+
+        return $this;
+    }
+
+    /**
+     * Get usrApellido
+     *
+     * @return string
+     */
+    public function getUsrApellido()
+    {
+        return $this->usrApellido;
+    }
+
+    /**
+     * Set usrFechaNacimiento
+     *
+     * @param \DateTime $usrFechaNacimiento
+     *
+     * @return PlUser
+     */
+    public function setUsrFechaNacimiento($usrFechaNacimiento)
+    {
+        $this->usrFechaNacimiento = $usrFechaNacimiento;
+
+        return $this;
+    }
+
+    /**
+     * Get usrFechaNacimiento
+     *
+     * @return \DateTime
+     */
+    public function getUsrFechaNacimiento()
+    {
+        return $this->usrFechaNacimiento;
+    }
+
+    /**
+     * Set usrNit
+     *
+     * @param integer $usrNit
+     *
+     * @return PlUser
+     */
+    public function setUsrNit($usrNit)
+    {
+        $this->usrNit = $usrNit;
+
+        return $this;
+    }
+
+    /**
+     * Get usrNit
+     *
+     * @return integer
+     */
+    public function getUsrNit()
+    {
+        return $this->usrNit;
+    }
+
+    /**
+     * Set usrDireccion
+     *
+     * @param string $usrDireccion
+     *
+     * @return PlUser
+     */
+    public function setUsrDireccion($usrDireccion)
+    {
+        $this->usrDireccion = $usrDireccion;
+
+        return $this;
+    }
+
+    /**
+     * Get usrDireccion
+     *
+     * @return string
+     */
+    public function getUsrDireccion()
+    {
+        return $this->usrDireccion;
+    }
+
+    /**
+     * Set usrPa
+     *
+     * @param \PylifeBundle\Entity\PlPais $usrPa
+     *
+     * @return PlUser
+     */
+    public function setUsrPa(\PylifeBundle\Entity\PlPais $usrPa = null)
+    {
+        $this->usrPa = $usrPa;
+
+        return $this;
+    }
+
+    /**
+     * Get usrPa
+     *
+     * @return \PylifeBundle\Entity\PlPais
+     */
+    public function getUsrPa()
+    {
+        return $this->usrPa;
+    }
+}

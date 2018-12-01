@@ -104,5 +104,254 @@ class PlProducto
     private $proUsrUpdatedBy;
 
 
-}
 
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set proNombre
+     *
+     * @param string $proNombre
+     *
+     * @return PlProducto
+     */
+    public function setProNombre($proNombre)
+    {
+        $this->proNombre = $proNombre;
+
+        return $this;
+    }
+
+    /**
+     * Get proNombre
+     *
+     * @return string
+     */
+    public function getProNombre()
+    {
+        return $this->proNombre;
+    }
+
+    /**
+     * Set proPrecio
+     *
+     * @param float $proPrecio
+     *
+     * @return PlProducto
+     */
+    public function setProPrecio($proPrecio)
+    {
+        $this->proPrecio = $proPrecio;
+
+        return $this;
+    }
+
+    /**
+     * Get proPrecio
+     *
+     * @return float
+     */
+    public function getProPrecio()
+    {
+        return $this->proPrecio;
+    }
+
+    /**
+     * Set proPuntos
+     *
+     * @param integer $proPuntos
+     *
+     * @return PlProducto
+     */
+    public function setProPuntos($proPuntos)
+    {
+        $this->proPuntos = $proPuntos;
+
+        return $this;
+    }
+
+    /**
+     * Get proPuntos
+     *
+     * @return integer
+     */
+    public function getProPuntos()
+    {
+        return $this->proPuntos;
+    }
+
+    /**
+     * Set proCreatedAt
+     *
+     * @param \DateTime $proCreatedAt
+     *
+     * @return PlProducto
+     */
+    public function setProCreatedAt($proCreatedAt)
+    {
+        $this->proCreatedAt = $proCreatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get proCreatedAt
+     *
+     * @return \DateTime
+     */
+    public function getProCreatedAt()
+    {
+        return $this->proCreatedAt;
+    }
+
+    /**
+     * Set proUpdatedAt
+     *
+     * @param \DateTime $proUpdatedAt
+     *
+     * @return PlProducto
+     */
+    public function setProUpdatedAt($proUpdatedAt)
+    {
+        $this->proUpdatedAt = $proUpdatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get proUpdatedAt
+     *
+     * @return \DateTime
+     */
+    public function getProUpdatedAt()
+    {
+        return $this->proUpdatedAt;
+    }
+
+    /**
+     * Set proActive
+     *
+     * @param boolean $proActive
+     *
+     * @return PlProducto
+     */
+    public function setProActive($proActive)
+    {
+        $this->proActive = $proActive;
+
+        return $this;
+    }
+
+    /**
+     * Get proActive
+     *
+     * @return boolean
+     */
+    public function getProActive()
+    {
+        return $this->proActive;
+    }
+
+    /**
+     * Set proMo
+     *
+     * @param \PylifeBundle\Entity\PlMoneda $proMo
+     *
+     * @return PlProducto
+     */
+    public function setProMo(\PylifeBundle\Entity\PlMoneda $proMo = null)
+    {
+        $this->proMo = $proMo;
+
+        return $this;
+    }
+
+    /**
+     * Get proMo
+     *
+     * @return \PylifeBundle\Entity\PlMoneda
+     */
+    public function getProMo()
+    {
+        return $this->proMo;
+    }
+
+    /**
+     * Set proPa
+     *
+     * @param \PylifeBundle\Entity\PlPais $proPa
+     *
+     * @return PlProducto
+     */
+    public function setProPa(\PylifeBundle\Entity\PlPais $proPa = null)
+    {
+        $this->proPa = $proPa;
+
+        return $this;
+    }
+
+    /**
+     * Get proPa
+     *
+     * @return \PylifeBundle\Entity\PlPais
+     */
+    public function getProPa()
+    {
+        return $this->proPa;
+    }
+
+    /**
+     * Set proUsrCreatedBy
+     *
+     * @param \PylifeBundle\Entity\PlUser $proUsrCreatedBy
+     *
+     * @return PlProducto
+     */
+    public function setProUsrCreatedBy(\PylifeBundle\Entity\PlUser $proUsrCreatedBy = null)
+    {
+        $this->proUsrCreatedBy = $proUsrCreatedBy;
+
+        return $this;
+    }
+
+    /**
+     * Get proUsrCreatedBy
+     *
+     * @return \PylifeBundle\Entity\PlUser
+     */
+    public function getProUsrCreatedBy()
+    {
+        return $this->proUsrCreatedBy;
+    }
+
+    /**
+     * Set proUsrUpdatedBy
+     *
+     * @param \PylifeBundle\Entity\PlUser $proUsrUpdatedBy
+     *
+     * @return PlProducto
+     */
+    public function setProUsrUpdatedBy(\PylifeBundle\Entity\PlUser $proUsrUpdatedBy = null)
+    {
+        $this->proUsrUpdatedBy = $proUsrUpdatedBy;
+
+        return $this;
+    }
+
+    /**
+     * Get proUsrUpdatedBy
+     *
+     * @return \PylifeBundle\Entity\PlUser
+     */
+    public function getProUsrUpdatedBy()
+    {
+        return $this->proUsrUpdatedBy;
+    }
+}

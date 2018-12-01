@@ -70,5 +70,158 @@ class PlRole
     private $rolUsrUpdatedBy;
 
 
-}
 
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set rolNombre
+     *
+     * @param string $rolNombre
+     *
+     * @return PlRole
+     */
+    public function setRolNombre($rolNombre)
+    {
+        $this->rolNombre = $rolNombre;
+
+        return $this;
+    }
+
+    /**
+     * Get rolNombre
+     *
+     * @return string
+     */
+    public function getRolNombre()
+    {
+        return $this->rolNombre;
+    }
+
+    /**
+     * Set rolCreatedAt
+     *
+     * @param \DateTime $rolCreatedAt
+     *
+     * @return PlRole
+     */
+    public function setRolCreatedAt($rolCreatedAt)
+    {
+        $this->rolCreatedAt = $rolCreatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get rolCreatedAt
+     *
+     * @return \DateTime
+     */
+    public function getRolCreatedAt()
+    {
+        return $this->rolCreatedAt;
+    }
+
+    /**
+     * Set rolUpdatedAt
+     *
+     * @param \DateTime $rolUpdatedAt
+     *
+     * @return PlRole
+     */
+    public function setRolUpdatedAt($rolUpdatedAt)
+    {
+        $this->rolUpdatedAt = $rolUpdatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get rolUpdatedAt
+     *
+     * @return \DateTime
+     */
+    public function getRolUpdatedAt()
+    {
+        return $this->rolUpdatedAt;
+    }
+
+    /**
+     * Set rolActive
+     *
+     * @param boolean $rolActive
+     *
+     * @return PlRole
+     */
+    public function setRolActive($rolActive)
+    {
+        $this->rolActive = $rolActive;
+
+        return $this;
+    }
+
+    /**
+     * Get rolActive
+     *
+     * @return boolean
+     */
+    public function getRolActive()
+    {
+        return $this->rolActive;
+    }
+
+    /**
+     * Set rolUsrCreatedBy
+     *
+     * @param \PylifeBundle\Entity\PlUser $rolUsrCreatedBy
+     *
+     * @return PlRole
+     */
+    public function setRolUsrCreatedBy(\PylifeBundle\Entity\PlUser $rolUsrCreatedBy = null)
+    {
+        $this->rolUsrCreatedBy = $rolUsrCreatedBy;
+
+        return $this;
+    }
+
+    /**
+     * Get rolUsrCreatedBy
+     *
+     * @return \PylifeBundle\Entity\PlUser
+     */
+    public function getRolUsrCreatedBy()
+    {
+        return $this->rolUsrCreatedBy;
+    }
+
+    /**
+     * Set rolUsrUpdatedBy
+     *
+     * @param \PylifeBundle\Entity\PlUser $rolUsrUpdatedBy
+     *
+     * @return PlRole
+     */
+    public function setRolUsrUpdatedBy(\PylifeBundle\Entity\PlUser $rolUsrUpdatedBy = null)
+    {
+        $this->rolUsrUpdatedBy = $rolUsrUpdatedBy;
+
+        return $this;
+    }
+
+    /**
+     * Get rolUsrUpdatedBy
+     *
+     * @return \PylifeBundle\Entity\PlUser
+     */
+    public function getRolUsrUpdatedBy()
+    {
+        return $this->rolUsrUpdatedBy;
+    }
+}

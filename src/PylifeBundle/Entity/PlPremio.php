@@ -80,5 +80,182 @@ class PlPremio
     private $preUsrUpdatedBy;
 
 
-}
 
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set preNombre
+     *
+     * @param string $preNombre
+     *
+     * @return PlPremio
+     */
+    public function setPreNombre($preNombre)
+    {
+        $this->preNombre = $preNombre;
+
+        return $this;
+    }
+
+    /**
+     * Get preNombre
+     *
+     * @return string
+     */
+    public function getPreNombre()
+    {
+        return $this->preNombre;
+    }
+
+    /**
+     * Set preCreatedAt
+     *
+     * @param \DateTime $preCreatedAt
+     *
+     * @return PlPremio
+     */
+    public function setPreCreatedAt($preCreatedAt)
+    {
+        $this->preCreatedAt = $preCreatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get preCreatedAt
+     *
+     * @return \DateTime
+     */
+    public function getPreCreatedAt()
+    {
+        return $this->preCreatedAt;
+    }
+
+    /**
+     * Set preUpdatedAt
+     *
+     * @param \DateTime $preUpdatedAt
+     *
+     * @return PlPremio
+     */
+    public function setPreUpdatedAt($preUpdatedAt)
+    {
+        $this->preUpdatedAt = $preUpdatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get preUpdatedAt
+     *
+     * @return \DateTime
+     */
+    public function getPreUpdatedAt()
+    {
+        return $this->preUpdatedAt;
+    }
+
+    /**
+     * Set preActive
+     *
+     * @param boolean $preActive
+     *
+     * @return PlPremio
+     */
+    public function setPreActive($preActive)
+    {
+        $this->preActive = $preActive;
+
+        return $this;
+    }
+
+    /**
+     * Get preActive
+     *
+     * @return boolean
+     */
+    public function getPreActive()
+    {
+        return $this->preActive;
+    }
+
+    /**
+     * Set prePa
+     *
+     * @param \PylifeBundle\Entity\PlPais $prePa
+     *
+     * @return PlPremio
+     */
+    public function setPrePa(\PylifeBundle\Entity\PlPais $prePa = null)
+    {
+        $this->prePa = $prePa;
+
+        return $this;
+    }
+
+    /**
+     * Get prePa
+     *
+     * @return \PylifeBundle\Entity\PlPais
+     */
+    public function getPrePa()
+    {
+        return $this->prePa;
+    }
+
+    /**
+     * Set preUsrCreatedBy
+     *
+     * @param \PylifeBundle\Entity\PlUser $preUsrCreatedBy
+     *
+     * @return PlPremio
+     */
+    public function setPreUsrCreatedBy(\PylifeBundle\Entity\PlUser $preUsrCreatedBy = null)
+    {
+        $this->preUsrCreatedBy = $preUsrCreatedBy;
+
+        return $this;
+    }
+
+    /**
+     * Get preUsrCreatedBy
+     *
+     * @return \PylifeBundle\Entity\PlUser
+     */
+    public function getPreUsrCreatedBy()
+    {
+        return $this->preUsrCreatedBy;
+    }
+
+    /**
+     * Set preUsrUpdatedBy
+     *
+     * @param \PylifeBundle\Entity\PlUser $preUsrUpdatedBy
+     *
+     * @return PlPremio
+     */
+    public function setPreUsrUpdatedBy(\PylifeBundle\Entity\PlUser $preUsrUpdatedBy = null)
+    {
+        $this->preUsrUpdatedBy = $preUsrUpdatedBy;
+
+        return $this;
+    }
+
+    /**
+     * Get preUsrUpdatedBy
+     *
+     * @return \PylifeBundle\Entity\PlUser
+     */
+    public function getPreUsrUpdatedBy()
+    {
+        return $this->preUsrUpdatedBy;
+    }
+}

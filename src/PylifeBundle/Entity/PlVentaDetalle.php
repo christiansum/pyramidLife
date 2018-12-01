@@ -97,5 +97,230 @@ class PlVentaDetalle
     private $vdVen;
 
 
-}
 
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set vdCantidadVendida
+     *
+     * @param integer $vdCantidadVendida
+     *
+     * @return PlVentaDetalle
+     */
+    public function setVdCantidadVendida($vdCantidadVendida)
+    {
+        $this->vdCantidadVendida = $vdCantidadVendida;
+
+        return $this;
+    }
+
+    /**
+     * Get vdCantidadVendida
+     *
+     * @return integer
+     */
+    public function getVdCantidadVendida()
+    {
+        return $this->vdCantidadVendida;
+    }
+
+    /**
+     * Set vdSumaPuntos
+     *
+     * @param integer $vdSumaPuntos
+     *
+     * @return PlVentaDetalle
+     */
+    public function setVdSumaPuntos($vdSumaPuntos)
+    {
+        $this->vdSumaPuntos = $vdSumaPuntos;
+
+        return $this;
+    }
+
+    /**
+     * Get vdSumaPuntos
+     *
+     * @return integer
+     */
+    public function getVdSumaPuntos()
+    {
+        return $this->vdSumaPuntos;
+    }
+
+    /**
+     * Set vdCreatedAt
+     *
+     * @param \DateTime $vdCreatedAt
+     *
+     * @return PlVentaDetalle
+     */
+    public function setVdCreatedAt($vdCreatedAt)
+    {
+        $this->vdCreatedAt = $vdCreatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get vdCreatedAt
+     *
+     * @return \DateTime
+     */
+    public function getVdCreatedAt()
+    {
+        return $this->vdCreatedAt;
+    }
+
+    /**
+     * Set vdUpdatedAt
+     *
+     * @param \DateTime $vdUpdatedAt
+     *
+     * @return PlVentaDetalle
+     */
+    public function setVdUpdatedAt($vdUpdatedAt)
+    {
+        $this->vdUpdatedAt = $vdUpdatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get vdUpdatedAt
+     *
+     * @return \DateTime
+     */
+    public function getVdUpdatedAt()
+    {
+        return $this->vdUpdatedAt;
+    }
+
+    /**
+     * Set vdActive
+     *
+     * @param boolean $vdActive
+     *
+     * @return PlVentaDetalle
+     */
+    public function setVdActive($vdActive)
+    {
+        $this->vdActive = $vdActive;
+
+        return $this;
+    }
+
+    /**
+     * Get vdActive
+     *
+     * @return boolean
+     */
+    public function getVdActive()
+    {
+        return $this->vdActive;
+    }
+
+    /**
+     * Set vdInv
+     *
+     * @param \PylifeBundle\Entity\PlInventario $vdInv
+     *
+     * @return PlVentaDetalle
+     */
+    public function setVdInv(\PylifeBundle\Entity\PlInventario $vdInv = null)
+    {
+        $this->vdInv = $vdInv;
+
+        return $this;
+    }
+
+    /**
+     * Get vdInv
+     *
+     * @return \PylifeBundle\Entity\PlInventario
+     */
+    public function getVdInv()
+    {
+        return $this->vdInv;
+    }
+
+    /**
+     * Set vdUsrCreatedBy
+     *
+     * @param \PylifeBundle\Entity\PlUser $vdUsrCreatedBy
+     *
+     * @return PlVentaDetalle
+     */
+    public function setVdUsrCreatedBy(\PylifeBundle\Entity\PlUser $vdUsrCreatedBy = null)
+    {
+        $this->vdUsrCreatedBy = $vdUsrCreatedBy;
+
+        return $this;
+    }
+
+    /**
+     * Get vdUsrCreatedBy
+     *
+     * @return \PylifeBundle\Entity\PlUser
+     */
+    public function getVdUsrCreatedBy()
+    {
+        return $this->vdUsrCreatedBy;
+    }
+
+    /**
+     * Set vdUsrUpdatedBy
+     *
+     * @param \PylifeBundle\Entity\PlUser $vdUsrUpdatedBy
+     *
+     * @return PlVentaDetalle
+     */
+    public function setVdUsrUpdatedBy(\PylifeBundle\Entity\PlUser $vdUsrUpdatedBy = null)
+    {
+        $this->vdUsrUpdatedBy = $vdUsrUpdatedBy;
+
+        return $this;
+    }
+
+    /**
+     * Get vdUsrUpdatedBy
+     *
+     * @return \PylifeBundle\Entity\PlUser
+     */
+    public function getVdUsrUpdatedBy()
+    {
+        return $this->vdUsrUpdatedBy;
+    }
+
+    /**
+     * Set vdVen
+     *
+     * @param \PylifeBundle\Entity\PlVenta $vdVen
+     *
+     * @return PlVentaDetalle
+     */
+    public function setVdVen(\PylifeBundle\Entity\PlVenta $vdVen = null)
+    {
+        $this->vdVen = $vdVen;
+
+        return $this;
+    }
+
+    /**
+     * Get vdVen
+     *
+     * @return \PylifeBundle\Entity\PlVenta
+     */
+    public function getVdVen()
+    {
+        return $this->vdVen;
+    }
+}

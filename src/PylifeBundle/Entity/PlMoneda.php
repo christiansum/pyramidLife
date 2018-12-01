@@ -77,5 +77,182 @@ class PlMoneda
     private $moUsrUpdatedBy;
 
 
-}
 
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set moNombre
+     *
+     * @param string $moNombre
+     *
+     * @return PlMoneda
+     */
+    public function setMoNombre($moNombre)
+    {
+        $this->moNombre = $moNombre;
+
+        return $this;
+    }
+
+    /**
+     * Get moNombre
+     *
+     * @return string
+     */
+    public function getMoNombre()
+    {
+        return $this->moNombre;
+    }
+
+    /**
+     * Set moSimbolo
+     *
+     * @param string $moSimbolo
+     *
+     * @return PlMoneda
+     */
+    public function setMoSimbolo($moSimbolo)
+    {
+        $this->moSimbolo = $moSimbolo;
+
+        return $this;
+    }
+
+    /**
+     * Get moSimbolo
+     *
+     * @return string
+     */
+    public function getMoSimbolo()
+    {
+        return $this->moSimbolo;
+    }
+
+    /**
+     * Set moCreatedAt
+     *
+     * @param \DateTime $moCreatedAt
+     *
+     * @return PlMoneda
+     */
+    public function setMoCreatedAt($moCreatedAt)
+    {
+        $this->moCreatedAt = $moCreatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get moCreatedAt
+     *
+     * @return \DateTime
+     */
+    public function getMoCreatedAt()
+    {
+        return $this->moCreatedAt;
+    }
+
+    /**
+     * Set moUpdatedAt
+     *
+     * @param \DateTime $moUpdatedAt
+     *
+     * @return PlMoneda
+     */
+    public function setMoUpdatedAt($moUpdatedAt)
+    {
+        $this->moUpdatedAt = $moUpdatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get moUpdatedAt
+     *
+     * @return \DateTime
+     */
+    public function getMoUpdatedAt()
+    {
+        return $this->moUpdatedAt;
+    }
+
+    /**
+     * Set moActive
+     *
+     * @param boolean $moActive
+     *
+     * @return PlMoneda
+     */
+    public function setMoActive($moActive)
+    {
+        $this->moActive = $moActive;
+
+        return $this;
+    }
+
+    /**
+     * Get moActive
+     *
+     * @return boolean
+     */
+    public function getMoActive()
+    {
+        return $this->moActive;
+    }
+
+    /**
+     * Set moUsrCreatedBy
+     *
+     * @param \PylifeBundle\Entity\PlUser $moUsrCreatedBy
+     *
+     * @return PlMoneda
+     */
+    public function setMoUsrCreatedBy(\PylifeBundle\Entity\PlUser $moUsrCreatedBy = null)
+    {
+        $this->moUsrCreatedBy = $moUsrCreatedBy;
+
+        return $this;
+    }
+
+    /**
+     * Get moUsrCreatedBy
+     *
+     * @return \PylifeBundle\Entity\PlUser
+     */
+    public function getMoUsrCreatedBy()
+    {
+        return $this->moUsrCreatedBy;
+    }
+
+    /**
+     * Set moUsrUpdatedBy
+     *
+     * @param \PylifeBundle\Entity\PlUser $moUsrUpdatedBy
+     *
+     * @return PlMoneda
+     */
+    public function setMoUsrUpdatedBy(\PylifeBundle\Entity\PlUser $moUsrUpdatedBy = null)
+    {
+        $this->moUsrUpdatedBy = $moUsrUpdatedBy;
+
+        return $this;
+    }
+
+    /**
+     * Get moUsrUpdatedBy
+     *
+     * @return \PylifeBundle\Entity\PlUser
+     */
+    public function getMoUsrUpdatedBy()
+    {
+        return $this->moUsrUpdatedBy;
+    }
+}

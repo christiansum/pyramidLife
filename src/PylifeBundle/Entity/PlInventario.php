@@ -87,5 +87,206 @@ class PlInventario
     private $invUsrUpdatedBy;
 
 
-}
 
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set invCantidad
+     *
+     * @param integer $invCantidad
+     *
+     * @return PlInventario
+     */
+    public function setInvCantidad($invCantidad)
+    {
+        $this->invCantidad = $invCantidad;
+
+        return $this;
+    }
+
+    /**
+     * Get invCantidad
+     *
+     * @return integer
+     */
+    public function getInvCantidad()
+    {
+        return $this->invCantidad;
+    }
+
+    /**
+     * Set invFechaVencimiento
+     *
+     * @param \DateTime $invFechaVencimiento
+     *
+     * @return PlInventario
+     */
+    public function setInvFechaVencimiento($invFechaVencimiento)
+    {
+        $this->invFechaVencimiento = $invFechaVencimiento;
+
+        return $this;
+    }
+
+    /**
+     * Get invFechaVencimiento
+     *
+     * @return \DateTime
+     */
+    public function getInvFechaVencimiento()
+    {
+        return $this->invFechaVencimiento;
+    }
+
+    /**
+     * Set invCreatedAt
+     *
+     * @param \DateTime $invCreatedAt
+     *
+     * @return PlInventario
+     */
+    public function setInvCreatedAt($invCreatedAt)
+    {
+        $this->invCreatedAt = $invCreatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get invCreatedAt
+     *
+     * @return \DateTime
+     */
+    public function getInvCreatedAt()
+    {
+        return $this->invCreatedAt;
+    }
+
+    /**
+     * Set invUpdatedAt
+     *
+     * @param \DateTime $invUpdatedAt
+     *
+     * @return PlInventario
+     */
+    public function setInvUpdatedAt($invUpdatedAt)
+    {
+        $this->invUpdatedAt = $invUpdatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get invUpdatedAt
+     *
+     * @return \DateTime
+     */
+    public function getInvUpdatedAt()
+    {
+        return $this->invUpdatedAt;
+    }
+
+    /**
+     * Set invActive
+     *
+     * @param boolean $invActive
+     *
+     * @return PlInventario
+     */
+    public function setInvActive($invActive)
+    {
+        $this->invActive = $invActive;
+
+        return $this;
+    }
+
+    /**
+     * Get invActive
+     *
+     * @return boolean
+     */
+    public function getInvActive()
+    {
+        return $this->invActive;
+    }
+
+    /**
+     * Set invPro
+     *
+     * @param \PylifeBundle\Entity\PlProducto $invPro
+     *
+     * @return PlInventario
+     */
+    public function setInvPro(\PylifeBundle\Entity\PlProducto $invPro = null)
+    {
+        $this->invPro = $invPro;
+
+        return $this;
+    }
+
+    /**
+     * Get invPro
+     *
+     * @return \PylifeBundle\Entity\PlProducto
+     */
+    public function getInvPro()
+    {
+        return $this->invPro;
+    }
+
+    /**
+     * Set invUsrCreatedBy
+     *
+     * @param \PylifeBundle\Entity\PlUser $invUsrCreatedBy
+     *
+     * @return PlInventario
+     */
+    public function setInvUsrCreatedBy(\PylifeBundle\Entity\PlUser $invUsrCreatedBy = null)
+    {
+        $this->invUsrCreatedBy = $invUsrCreatedBy;
+
+        return $this;
+    }
+
+    /**
+     * Get invUsrCreatedBy
+     *
+     * @return \PylifeBundle\Entity\PlUser
+     */
+    public function getInvUsrCreatedBy()
+    {
+        return $this->invUsrCreatedBy;
+    }
+
+    /**
+     * Set invUsrUpdatedBy
+     *
+     * @param \PylifeBundle\Entity\PlUser $invUsrUpdatedBy
+     *
+     * @return PlInventario
+     */
+    public function setInvUsrUpdatedBy(\PylifeBundle\Entity\PlUser $invUsrUpdatedBy = null)
+    {
+        $this->invUsrUpdatedBy = $invUsrUpdatedBy;
+
+        return $this;
+    }
+
+    /**
+     * Get invUsrUpdatedBy
+     *
+     * @return \PylifeBundle\Entity\PlUser
+     */
+    public function getInvUsrUpdatedBy()
+    {
+        return $this->invUsrUpdatedBy;
+    }
+}

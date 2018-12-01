@@ -1,7 +1,6 @@
-{% extends 'PylifeBundle::header.html.twig' %}
+    {% extends 'PylifeBundle::header.html.twig' %}
 
-
-{% block body %}
+    {% block body %}
     <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
         <div class="row">
             <ol class="breadcrumb">
@@ -12,64 +11,63 @@
 
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Paises</h1>
+                <h1 class="page-header">Plpais list</h1>
             </div>
         </div><!--/.row-->
 
         <div class="row">
             <div class="col-lg-12">
                 <div class="panel panel-default">
-                    <div class="panel-heading">List the Donations creted by yourself.</div>
+                    <div class="panel-heading">DescripcionModulo</div>
                     <div class="panel-body">
                         <div class="col-md-12">
 
                             <table data-toggle="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Panombre</th>
-                <th>Pacodigoarea</th>
-                <th>Pacreatedat</th>
-                <th>Paupdatedat</th>
-                <th>Paactive</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for plPai in plPais %}
-            <tr>
-                <td><a href="{{ path('pais_show', { 'id': plPai.id }) }}">{{ plPai.id }}</a></td>
-                <td>{{ plPai.paNombre }}</td>
-                <td>{{ plPai.paCodigoArea }}</td>
-                <td>{% if plPai.paCreatedAt %}{{ plPai.paCreatedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
-                <td>{% if plPai.paUpdatedAt %}{{ plPai.paUpdatedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
-                <td>{% if plPai.paActive %}Yes{% else %}No{% endif %}</td>
-                <td>
-                    <ul>
-                        <li>
-                            <a href="{{ path('pais_show', { 'id': plPai.id }) }}">show</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('pais_edit', { 'id': plPai.id }) }}">edit</a>
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+                                <thead>
+                                <tr>
+                                        <th>Id</th>
+                                        <th>Panombre</th>
+                                        <th>Pacodigoarea</th>
+                                        <th>Pacreatedat</th>
+                                        <th>Paupdatedat</th>
+                                        <th>Paactive</th>
+                                    <th>Actions</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for plPai in plPais %}
+                                <tr>
+                                            <td><a href="{{ path('pais_show', { 'id': plPai.id }) }}">{{ plPai.id }}</a></td>
+                                            <td>{{ plPai.paNombre }}</td>
+                                            <td>{{ plPai.paCodigoArea }}</td>
+                                            <td>{% if plPai.paCreatedAt %}{{ plPai.paCreatedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                                            <td>{% if plPai.paUpdatedAt %}{{ plPai.paUpdatedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                                            <td>{% if plPai.paActive %}Yes{% else %}No{% endif %}</td>
+                                            <td>
+                                                <ul>
+                                                        <li>
+                                                            <a href="{{ path('pais_show', { 'id': plPai.id }) }}">show</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="{{ path('pais_edit', { 'id': plPai.id }) }}">edit</a>
+                                                        </li>
+                                                </ul>
+                                            </td>
+                                </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
 
-    <ul>
-        <li>
-            <a href="{{ path('pais_new') }}">Create a new plPai</a>
-        </li>
-    </ul>
-</div>
-                    </div>
+                            <ul>
+                                    <li>
+                                        <a href="{{ path('pais_new') }}">Create a new plPai</a>
+                                    </li>
+                                </ul>                        </div>
                     </div>
                 </div>
-            </div><!-- /.col-->
-        </div><!-- /.row -->
+            </div>
+        </div><!-- /.col-->
+    </div><!-- /.row -->
     <script>
 	    $(function () {
 		    $('#hover, #striped, #condensed').click(function () {
@@ -113,4 +111,5 @@
 		    if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
 	    })
     </script>
-{% endblock %}
+
+    {% endblock %}

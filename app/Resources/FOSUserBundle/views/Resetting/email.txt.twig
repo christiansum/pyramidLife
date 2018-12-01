@@ -1,13 +1,11 @@
-{% trans_default_domain 'FOSUserBundle' %}
 {% block subject %}
 {% autoescape false %}
-{{ 'resetting.email.subject'|trans }}
+{{ 'resetting.email.subject'|trans({'%username%': user.username, '%confirmationUrl%': confirmationUrl}, 'FOSUserBundle') }}
 {% endautoescape %}
 {% endblock %}
 {% block body_text %}
 {% autoescape false %}
-safasdfdsafsdafsadfsdafasd
-{{ 'resetting.email.message'|trans({'%username%': user.username, '%confirmationUrl%': confirmationUrl}) }}
+{{ 'resetting.email.message'|trans({'%username%': user.username, '%confirmationUrl%': confirmationUrl}, 'FOSUserBundle') }}
 {% endautoescape %}
 {% endblock %}
 {% block body_html %}{% endblock %}

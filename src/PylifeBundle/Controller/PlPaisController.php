@@ -7,13 +7,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
- * Plpai controller.
+ * Plpais controller.
  *
  */
 class PlPaisController extends Controller
 {
     /**
-     * Lists all plPai entities.
+     * Lists all plPais entities.
      *
      */
     public function indexAction()
@@ -28,25 +28,25 @@ class PlPaisController extends Controller
     }
 
     /**
-     * Creates a new plPai entity.
+     * Creates a new plPais entity.
      *
      */
     public function newAction(Request $request)
     {
-        $plPai = new Plpai();
-        $form = $this->createForm('PylifeBundle\Form\PlPaisType', $plPai);
+        $plPais = new Plpais();
+        $form = $this->createForm('PylifeBundle\Form\PlPaisType', $plPais);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
-            $em->persist($plPai);
+            $em->persist($plPais);
             $em->flush();
 
-            return $this->redirectToRoute('pais_show', array('id' => $plPai->getId()));
+            return $this->redirectToRoute('pais_show', array('id' => $plPais->getId()));
         }
 
         return $this->render('plpais/new.html.twig', array(
-            'plPai' => $plPai,
+            'plPai' => $plPais,
             'form' => $form->createView(),
         ));
     }
@@ -55,12 +55,12 @@ class PlPaisController extends Controller
      * Finds and displays a plPai entity.
      *
      */
-    public function showAction(PlPais $plPai)
+    public function showAction(PlPais $plPais)
     {
-        $deleteForm = $this->createDeleteForm($plPai);
+        $deleteForm = $this->createDeleteForm($plPais);
 
         return $this->render('plpais/show.html.twig', array(
-            'plPai' => $plPai,
+            'plPai' => $plPais,
             'delete_form' => $deleteForm->createView(),
         ));
     }
@@ -69,20 +69,20 @@ class PlPaisController extends Controller
      * Displays a form to edit an existing plPai entity.
      *
      */
-    public function editAction(Request $request, PlPais $plPai)
+    public function editAction(Request $request, PlPais $plPais)
     {
-        $deleteForm = $this->createDeleteForm($plPai);
-        $editForm = $this->createForm('PylifeBundle\Form\PlPaisType', $plPai);
+        $deleteForm = $this->createDeleteForm($plPais);
+        $editForm = $this->createForm('PylifeBundle\Form\PlPaisType', $plPais);
         $editForm->handleRequest($request);
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('pais_edit', array('id' => $plPai->getId()));
+            return $this->redirectToRoute('pais_edit', array('id' => $plPais->getId()));
         }
 
         return $this->render('plpais/edit.html.twig', array(
-            'plPai' => $plPai,
+            'plPai' => $plPais,
             'edit_form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
         ));
@@ -92,14 +92,14 @@ class PlPaisController extends Controller
      * Deletes a plPai entity.
      *
      */
-    public function deleteAction(Request $request, PlPais $plPai)
+    public function deleteAction(Request $request, PlPais $plPais)
     {
-        $form = $this->createDeleteForm($plPai);
+        $form = $this->createDeleteForm($plPais);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
-            $em->remove($plPai);
+            $em->remove($plPais);
             $em->flush();
         }
 
@@ -109,14 +109,14 @@ class PlPaisController extends Controller
     /**
      * Creates a form to delete a plPai entity.
      *
-     * @param PlPais $plPai The plPai entity
+     * @param PlPais $plPais The plPai entity
      *
      * @return \Symfony\Component\Form\Form The form
      */
-    private function createDeleteForm(PlPais $plPai)
+    private function createDeleteForm(PlPais $plPais)
     {
         return $this->createFormBuilder()
-            ->setAction($this->generateUrl('pais_delete', array('id' => $plPai->getId())))
+            ->setAction($this->generateUrl('pais_delete', array('id' => $plPais->getId())))
             ->setMethod('DELETE')
             ->getForm()
         ;
