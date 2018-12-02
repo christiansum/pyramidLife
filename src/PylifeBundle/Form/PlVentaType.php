@@ -5,6 +5,7 @@ namespace PylifeBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 
 class PlVentaType extends AbstractType
 {
@@ -13,13 +14,23 @@ class PlVentaType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('venCreatedAt')
-->add('venUpdatedAt')
-->add('venActive')
-->add('venPa')
-->add('venUsr')
-->add('venUsrCreatedBy')
-->add('venUsrUpdatedBy')
+        $builder
+			->add('venCreatedAt', DateTimeType::class, array(
+				'widget' => 'single_text',
+				'html5' => false,
+				'attr' => ['class' => 'js-datetimepicker'],
+			))
+			->add('venUpdatedAt', DateTimeType::class, array(
+				'widget' => 'single_text',
+				'html5' => false,
+				'attr' => ['class' => 'js-datetimepicker'],
+				'required'   => false,
+			))
+			->add('venActive')
+			->add('venPa')
+			->add('venUsr')
+			->add('venUsrCreatedBy')
+			->add('venUsrUpdatedBy')
 ;
     }/**
      * {@inheritdoc}

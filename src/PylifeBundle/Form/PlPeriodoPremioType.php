@@ -5,6 +5,7 @@ namespace PylifeBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 
 class PlPeriodoPremioType extends AbstractType
 {
@@ -13,7 +14,24 @@ class PlPeriodoPremioType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('ppNombre')->add('ppFechaInicial')->add('ppFechaFinal')->add('ppCreatedAt')->add('ppUpdatedAt')->add('ppActive')->add('ppUsrCreatedBy')->add('ppUsrUpdatedBy');
+        $builder
+			->add('ppNombre')
+			->add('ppFechaInicial')
+			->add('ppFechaFinal')
+			->add('ppCreatedAt', DateTimeType::class, array(
+				'widget' => 'single_text',
+				'html5' => false,
+				'attr' => ['class' => 'js-datetimepicker'],
+			))
+			->add('ppUpdatedAt', DateTimeType::class, array(
+				'widget' => 'single_text',
+				'html5' => false,
+				'attr' => ['class' => 'js-datetimepicker'],
+				'required'   => false,
+			))
+			->add('ppActive')
+			->add('ppUsrCreatedBy')
+			->add('ppUsrUpdatedBy');
     }/**
      * {@inheritdoc}
      */

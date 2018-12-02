@@ -14,7 +14,8 @@ class PlPaisType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('paNombre')
+        $builder
+			->add('paNombre')
 		   ->add('paCodigoArea')
 		   ->add('paCreatedAt', DateTimeType::class, array(
 			   'widget' => 'single_text',

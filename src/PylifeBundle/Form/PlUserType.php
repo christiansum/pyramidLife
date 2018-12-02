@@ -5,6 +5,7 @@ namespace PylifeBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 
 class PlUserType extends AbstractType
 {
@@ -13,12 +14,13 @@ class PlUserType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('usrNombre')
-->add('usrApellido')
-->add('usrFechaNacimiento')
-->add('usrNit')
-->add('usrDireccion')
-->add('usrPa')
+        $builder
+			->add('usrNombre')
+			->add('usrApellido')
+			->add('usrFechaNacimiento')
+			->add('usrNit')
+			->add('usrDireccion')
+			->add('usrPa')
 ;
     }/**
      * {@inheritdoc}

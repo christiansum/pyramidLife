@@ -7,7 +7,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
- * Plventum controller.
+ * PlVenta controller.
  *
  */
 class PlVentaController extends Controller
@@ -33,7 +33,7 @@ class PlVentaController extends Controller
      */
     public function newAction(Request $request)
     {
-        $plVentum = new Plventum();
+        $plVentum = new PlVenta();
         $form = $this->createForm('PylifeBundle\Form\PlVentaType', $plVentum);
         $form->handleRequest($request);
 

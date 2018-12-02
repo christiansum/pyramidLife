@@ -5,6 +5,7 @@ namespace PylifeBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 
 class PlInventarioType extends AbstractType
 {
@@ -13,7 +14,24 @@ class PlInventarioType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('invCantidad')->add('invFechaVencimiento')->add('invCreatedAt')->add('invUpdatedAt')->add('invActive')->add('invPro')->add('invUsrCreatedBy')->add('invUsrUpdatedBy');
+        $builder
+			->add('invCantidad')
+			->add('invFechaVencimiento')
+			->add('invCreatedAt', DateTimeType::class, array(
+				'widget' => 'single_text',
+				'html5' => false,
+				'attr' => ['class' => 'js-datetimepicker'],
+			))
+			->add('invUpdatedAt', DateTimeType::class, array(
+				'widget' => 'single_text',
+				'html5' => false,
+				'attr' => ['class' => 'js-datetimepicker'],
+				'required'   => false,
+			))
+			->add('invActive')
+			->add('invPro')
+			->add('invUsrCreatedBy')
+			->add('invUsrUpdatedBy');
     }/**
      * {@inheritdoc}
      */

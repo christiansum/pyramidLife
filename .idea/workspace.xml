@@ -2,7 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6f29f99-2ca5-4627-8c2b-015ca19dc7b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Resources/config/routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Controller/PlVentaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Controller/PlVentaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlPais.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlPais.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Form/PlInventarioType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Form/PlInventarioType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Form/PlMonedaType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Form/PlMonedaType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Form/PlPaisType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Form/PlPaisType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Form/PlPenalizacionType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Form/PlPenalizacionType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Form/PlPeriodoPremioType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Form/PlPeriodoPremioType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Form/PlPiramideType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Form/PlPiramideType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Form/PlPosicionType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Form/PlPosicionType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Form/PlPremioType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Form/PlPremioType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Form/PlProductoType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Form/PlProductoType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Form/PlRangoType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Form/PlRangoType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Form/PlRoleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Form/PlRoleType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Form/PlTipoPenalizacionType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Form/PlTipoPenalizacionType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Form/PlUserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Form/PlUserType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Form/PlVentaType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Form/PlVentaType.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,40 +32,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            <state relative-caret-position="357">
+              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Form/PlPeriodoPremioType.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/form/FormType.php.twig">
+        <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Entity/PlUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+            <state relative-caret-position="-1016">
+              <caret line="120" column="22" selection-start-line="120" selection-start-column="22" selection-end-line="120" selection-end-column="22" />
+              <folding>
+                <element signature="e#39#81#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Form/PlPremioType.php">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Entity/PlPais.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="664">
+              <caret line="258" column="32" selection-start-line="258" selection-start-column="32" selection-end-line="258" selection-end-column="32" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>autoloa</find>
-      <find>fos</find>
       <find>userna</find>
       <find>pylife_homepage</find>
       <find>views</find>
@@ -66,14 +83,47 @@
       <find>active</find>
       <find>redirectToRoute</find>
       <find>'1'</find>
+      <find>\)\-\&gt;add\(</find>
+      <find>(?&lt;![\t\s])-&gt;add</find>
+      <find>(?&lt;![\t\s])\n-&gt;add</find>
+      <find>\-\&gt;add\(</find>
+      <find>(?&lt;![\t\s])([\)])?-&gt;add</find>
+      <find>([\n])-&gt;add</find>
+      <find>(CreatedAt\')(\))</find>
+      <find>(UpdatedAt\')(\))</find>
+      <find>\\</find>
+      <find>Plventum</find>
+      <find>use Symfony\Component\OptionsResolver\OptionsResolver;</find>
+      <find>use Symfony\\Component\\OptionsResolver\\OptionsResolver;</find>
+      <find>(use Symfony\\Component\\OptionsResolver\\OptionsResolver;)</find>
     </findStrings>
     <replaceStrings>
       <replace>bundles/pylife</replace>
       <replace>$plPais,</replace>
       <replace>true</replace>
+      <replace>\)\n\t\t\t\-\&gt;add\(</replace>
+      <replace>\n\t\t\t\-\&gt;add</replace>
+      <replace>\n\t\t\t\-\&gt;add\(</replace>
+      <replace>$1\n\t\t\t\-\&gt;add</replace>
+      <replace>$1\t\t\t\-\&gt;add</replace>
+      <replace>$1, DateTimeType::class, array(\n\t\t\t\t'widget' =&gt; 'single_text',\n\t\t\t\t'html5' =&gt; false,\n\t\t\t\t'attr' =&gt; \['class' =&gt; 'js-datetimepicker'\],\n\t\t\t)$2</replace>
+      <replace>$1, DateTimeType::class, array(\n\t\t\t\t'widget' =&gt; 'single_text',\n\t\t\t\t'html5' =&gt; false,\n\t\t\t\t'attr' =&gt; \['class' =&gt; 'js-datetimepicker'\],\n\t\t\t\t'required'   =&gt; false,\n\t\t\t)$2</replace>
+      <replace>$1\n</replace>
+      <replace>use\ Symfony\\Component\\Form\\\Extension\\</replace>
+      <replace>$1\nuse Symfony\\Component\\Form\\[E]xtension\\Core\\Type\\DateTimeType\;</replace>
+      <replace>$1\nuse Symfony\\Component\\Form\\Extension\\Core\\Type\\DateTimeType\;</replace>
+      <replace>$1\nuse Symfony\\Component\\Form\\\\Extension\\Core\\Type\\DateTimeType\;</replace>
+      <replace>$1\nuse Symfony\\Component\\Form\\\Extension\\Core\\Type\\DateTimeType\;</replace>
+      <replace>\</replace>
+      <replace>$1\nuse Symfony\\Component\\Form\\[\E]xtension\\Core\\Type\\DateTimeType\;</replace>
+      <replace>use Symfony\Component\Form\Extension\Core\Type\DateTimeType;</replace>
+      <replace>PlVenta</replace>
+      <replace>$1\nuse Symfony\\Component\\Form\\Extension\Core\\Type\\DateTimeType;</replace>
+      <replace>$1\nuse Symfony\\Component\\Form\\Extension\\Core\\Type\\DateTimeType;</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\xampp\htdocs\pyramidLife\src\PylifeBundle\Entity</dir>
+      <dir>C:\xampp\htdocs\pyramidLife\src\PylifeBundle\Form</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -98,9 +148,7 @@
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/views/index.html.twig.twig" />
         <option value="$PROJECT_DIR$/src/PylifeBundle/Controller/PlPaisController.php" />
-        <option value="$PROJECT_DIR$/src/PylifeBundle/Entity/PlPais.php" />
         <option value="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/actions/new.php.twig" />
-        <option value="$PROJECT_DIR$/src/PylifeBundle/Form/PlPaisType.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/plpais/new.html.twig" />
         <option value="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/views/new.html.twig.twig" />
@@ -110,15 +158,23 @@
         <option value="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/views/show.html.twig.twig" />
         <option value="$PROJECT_DIR$/src/PylifeBundle/Entity/PlPremio.php" />
         <option value="$PROJECT_DIR$/src/PylifeBundle/Entity/PlPiramide.php" />
-        <option value="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/form/FormType.php.twig" />
         <option value="$PROJECT_DIR$/src/PylifeBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/PylifeBundle/Form/PlPosicionType.php" />
+        <option value="$PROJECT_DIR$/src/PylifeBundle/Form/PlInventarioType.php" />
+        <option value="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/form/FormType.php.twig" />
+        <option value="$PROJECT_DIR$/src/PylifeBundle/Form/PlUserType.php" />
+        <option value="$PROJECT_DIR$/src/PylifeBundle/Form/PlTipoPenalizacionType.php" />
+        <option value="$PROJECT_DIR$/src/PylifeBundle/Controller/PlVentaController.php" />
+        <option value="$PROJECT_DIR$/src/PylifeBundle/Form/PlVentaType.php" />
+        <option value="$PROJECT_DIR$/src/PylifeBundle/Form/PlPaisType.php" />
+        <option value="$PROJECT_DIR$/src/PylifeBundle/Entity/PlPais.php" />
       </list>
     </option>
   </component>
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 5.6.36">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle" />
       <path value="$PROJECT_DIR$/vendor/psr/log" />
@@ -173,6 +229,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -345,15 +402,15 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/xampp5636/php/php.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -381,18 +438,20 @@
       <workItem from="1543169709349" duration="32489000" />
       <workItem from="1543506761523" duration="15054000" />
       <workItem from="1543590558156" duration="13769000" />
-      <workItem from="1543704201070" duration="2970000" />
+      <workItem from="1543704201070" duration="8151000" />
+      <workItem from="1543713783835" duration="228000" />
+      <workItem from="1543714043728" duration="1444000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64587000" />
+    <option name="totallyTimeSpent" value="71440000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-199" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21002132" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21428572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -406,7 +465,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3297062" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -417,61 +476,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/KernelInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/PylifeBundle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/xampp5636/php/logs/php_error_log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/meta.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-794">
-          <caret line="295" column="34" lean-forward="true" selection-start-line="295" selection-start-column="34" selection-end-line="295" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="37" column="52" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Command/CreateUserCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/sensio/generator-bundle/Generator/CommandGenerator.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -611,23 +615,6 @@
     <entry file="file://$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/controller.php.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Entity/PlPais.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Form/PlPaisType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
-          <folding>
-            <element signature="e#37#77#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/plpais/new.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -639,16 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Entity/PlUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="120" column="22" selection-start-line="120" selection-start-column="22" selection-end-line="120" selection-end-column="22" />
-          <folding>
-            <element signature="e#39#81#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -708,23 +685,135 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Form/PlPremioType.php">
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Form/PlPosicionType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Form/PlPiramideType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Form/PlPenalizacionType.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/form/FormType.php.twig">
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Form/PlProductoType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+        <state relative-caret-position="462">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Form/PlRangoType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Form/PlPeriodoPremioType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="15" column="181" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="181" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Form/PlMonedaType.php">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Form/PlPremioType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/form/FormType.php.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Form/PlUserType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Controller/PlVentaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding>
+            <element signature="e#43#75#0#PHP" expanded="true" />
+            <element signature="e#449#471#1#PHP" expanded="true" />
+            <element signature="e#515#540#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Form/PlTipoPenalizacionType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Form/PlInventarioType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="e#37#77#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Form/PlVentaType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+          <folding>
+            <element signature="e#37#77#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Form/PlPaisType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        <state relative-caret-position="357">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Entity/PlUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1016">
+          <caret line="120" column="22" selection-start-line="120" selection-start-column="22" selection-end-line="120" selection-end-column="22" />
+          <folding>
+            <element signature="e#39#81#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Entity/PlPais.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="258" column="32" selection-start-line="258" selection-start-column="32" selection-end-line="258" selection-end-column="32" />
         </state>
       </provider>
     </entry>

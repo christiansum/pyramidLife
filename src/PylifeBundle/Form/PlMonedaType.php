@@ -5,6 +5,7 @@ namespace PylifeBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 
 class PlMonedaType extends AbstractType
 {
@@ -13,7 +14,23 @@ class PlMonedaType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('moNombre')->add('moSimbolo')->add('moCreatedAt')->add('moUpdatedAt')->add('moActive')->add('moUsrCreatedBy')->add('moUsrUpdatedBy');
+        $builder
+			->add('moNombre')
+			->add('moSimbolo')
+			->add('moCreatedAt', DateTimeType::class, array(
+				'widget' => 'single_text',
+				'html5' => false,
+				'attr' => ['class' => 'js-datetimepicker'],
+			))
+			->add('moUpdatedAt', DateTimeType::class, array(
+				'widget' => 'single_text',
+				'html5' => false,
+				'attr' => ['class' => 'js-datetimepicker'],
+				'required'   => false,
+			))
+			->add('moActive')
+			->add('moUsrCreatedBy')
+			->add('moUsrUpdatedBy');
     }/**
      * {@inheritdoc}
      */

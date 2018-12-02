@@ -254,4 +254,8 @@ class PlPais
     {
         return $this->paUsrUpdatedBy;
     }
+    
+    public function __toString(){
+    		return $this->paNombre;
+    }
 }

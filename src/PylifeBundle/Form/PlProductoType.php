@@ -5,6 +5,7 @@ namespace PylifeBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 
 class PlProductoType extends AbstractType
 {
@@ -13,16 +14,26 @@ class PlProductoType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('proNombre')
-->add('proPrecio')
-->add('proPuntos')
-->add('proCreatedAt')
-->add('proUpdatedAt')
-->add('proActive')
-->add('proMo')
-->add('proPa')
-->add('proUsrCreatedBy')
-->add('proUsrUpdatedBy')
+        $builder
+			->add('proNombre')
+			->add('proPrecio')
+			->add('proPuntos')
+			->add('proCreatedAt', DateTimeType::class, array(
+				'widget' => 'single_text',
+				'html5' => false,
+				'attr' => ['class' => 'js-datetimepicker'],
+			))
+			->add('proUpdatedAt', DateTimeType::class, array(
+				'widget' => 'single_text',
+				'html5' => false,
+				'attr' => ['class' => 'js-datetimepicker'],
+				'required'   => false,
+			))
+			->add('proActive')
+			->add('proMo')
+			->add('proPa')
+			->add('proUsrCreatedBy')
+			->add('proUsrUpdatedBy')
 ;
     }/**
      * {@inheritdoc}

@@ -5,6 +5,7 @@ namespace PylifeBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 
 class PlRoleType extends AbstractType
 {
@@ -13,12 +14,22 @@ class PlRoleType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('rolNombre')
-->add('rolCreatedAt')
-->add('rolUpdatedAt')
-->add('rolActive')
-->add('rolUsrCreatedBy')
-->add('rolUsrUpdatedBy')
+        $builder
+			->add('rolNombre')
+			->add('rolCreatedAt', DateTimeType::class, array(
+				'widget' => 'single_text',
+				'html5' => false,
+				'attr' => ['class' => 'js-datetimepicker'],
+			))
+			->add('rolUpdatedAt', DateTimeType::class, array(
+				'widget' => 'single_text',
+				'html5' => false,
+				'attr' => ['class' => 'js-datetimepicker'],
+				'required'   => false,
+			))
+			->add('rolActive')
+			->add('rolUsrCreatedBy')
+			->add('rolUsrUpdatedBy')
 ;
     }/**
      * {@inheritdoc}
