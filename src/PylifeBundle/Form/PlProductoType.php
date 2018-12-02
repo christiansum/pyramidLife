@@ -6,6 +6,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
 
 class PlProductoType extends AbstractType
 {
@@ -18,6 +19,7 @@ class PlProductoType extends AbstractType
 			->add('proNombre')
 			->add('proPrecio')
 			->add('proPuntos')
+			->add('proPath', FileType::class, array('label' => 'Imagen de Producto'))
 			->add('proCreatedAt', DateTimeType::class, array(
 				'widget' => 'single_text',
 				'html5' => false,

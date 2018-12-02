@@ -2,8 +2,6 @@
     {% form_theme edit_form 'bootstrap_3_layout.html.twig' %}
 
 {% block body %}
-    {% block body %}
-
 
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
     <div class="row">
@@ -38,7 +36,7 @@
     <script>
 	    $(document).ready(function() {
 		    $(".js-datetimepicker").datetimepicker({
-			    format: 'YYYY-MM-DD ',
+			    format: 'YYYY-MM-DD HH:mm:ss',
 			    ignoreReadonly:true,
 			    allowInputToggle: true,
 			    defaultDate: new Date()

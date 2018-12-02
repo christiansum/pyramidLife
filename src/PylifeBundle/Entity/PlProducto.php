@@ -43,6 +43,13 @@ class PlProducto
     private $proPuntos;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="pro_path", type="string", length=200, nullable=false)
+     */
+    private $proPath;
+
+    /**
      * @var \DateTime
      *
      * @ORM\Column(name="pro_created_at", type="datetime", nullable=false)
@@ -185,6 +192,30 @@ class PlProducto
     public function getProPuntos()
     {
         return $this->proPuntos;
+    }
+
+    /**
+     * Set proPath
+     *
+     * @param string $proPath
+     *
+     * @return PlProducto
+     */
+    public function setProPath($proPath)
+    {
+        $this->proPath = $proPath;
+
+        return $this;
+    }
+
+    /**
+     * Get proPath
+     *
+     * @return string
+     */
+    public function getProPath()
+    {
+        return $this->proPath;
     }
 
     /**
@@ -354,8 +385,4 @@ class PlProducto
     {
         return $this->proUsrUpdatedBy;
     }
-	
-	public function __toString(){
-		return $this->proNombre;
-	}
 }

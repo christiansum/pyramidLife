@@ -1,4 +1,4 @@
-    {% extends 'base.html.twig' %}
+    {% extends 'PylifeBundle::header.html.twig' %}
 
 {% block body %}
 
@@ -52,6 +52,10 @@
                                 <tr>
                                     <th>Proactive</th>
                                         <td>{% if plProducto.proActive %}Yes{% else %}No{% endif %}</td>
+                                </tr>
+                                <tr>
+                                    <th>Imagen de Producto</th>
+                                    <td> <img src="{{ asset('uploads/images/' ~ plProducto.proPath) }}" width="300" height="300"></td>
                                 </tr>
                             </tbody>
                         </table>

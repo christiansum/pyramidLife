@@ -256,6 +256,6 @@ class PlMoneda
         return $this->moUsrUpdatedBy;
     }
 	public function __toString(){
-		return $this->moNombre;
+		return $this->moSimbolo." - ".$this->moNombre;
 	}
 }

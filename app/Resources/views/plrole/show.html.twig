@@ -1,4 +1,4 @@
-    {% extends 'base.html.twig' %}
+{% extends 'PylifeBundle::header.html.twig' %}
 
 {% block body %}
 
@@ -25,43 +25,43 @@
 
                         <table>
                             <tbody>
-                                <tr>
-                                    <th>Id</th>
-                                        <td>{{ plRole.id }}</td>
-                                </tr>
-                                <tr>
-                                    <th>Rolnombre</th>
-                                        <td>{{ plRole.rolNombre }}</td>
-                                </tr>
-                                <tr>
-                                    <th>Rolcreatedat</th>
-                                        <td>{% if plRole.rolCreatedAt %}{{ plRole.rolCreatedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
-                                </tr>
-                                <tr>
-                                    <th>Rolupdatedat</th>
-                                        <td>{% if plRole.rolUpdatedAt %}{{ plRole.rolUpdatedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
-                                </tr>
-                                <tr>
-                                    <th>Rolactive</th>
-                                        <td>{% if plRole.rolActive %}Yes{% else %}No{% endif %}</td>
-                                </tr>
+                            <tr>
+                                <th>Id</th>
+                                <td>{{ plRole.id }}</td>
+                            </tr>
+                            <tr>
+                                <th>Rolnombre</th>
+                                <td>{{ plRole.rolNombre }}</td>
+                            </tr>
+                            <tr>
+                                <th>Rolcreatedat</th>
+                                <td>{% if plRole.rolCreatedAt %}{{ plRole.rolCreatedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                            </tr>
+                            <tr>
+                                <th>Rolupdatedat</th>
+                                <td>{% if plRole.rolUpdatedAt %}{{ plRole.rolUpdatedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                            </tr>
+                            <tr>
+                                <th>Rolactive</th>
+                                <td>{% if plRole.rolActive %}Yes{% else %}No{% endif %}</td>
+                            </tr>
                             </tbody>
                         </table>
 
-                                                    <ul>
-        <li>
-            <a href="{{ path('roles_index') }}">Back to the list</a>
-        </li>
-        <li>
-            <a href="{{ path('roles_edit', { 'id': plRole.id }) }}">Edit</a>
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
-    </ul>
-</div>
+                        <ul>
+                            <li>
+                                <a href="{{ path('roles_index') }}">Back to the list</a>
+                            </li>
+                            <li>
+                                <a href="{{ path('roles_edit', { 'id': plRole.id }) }}">Edit</a>
+                            </li>
+                            <li>
+                                {{ form_start(delete_form) }}
+                                <input type="submit" value="Delete">
+                                {{ form_end(delete_form) }}
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div><!-- /.col-->

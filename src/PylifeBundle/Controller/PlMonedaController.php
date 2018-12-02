@@ -38,7 +38,6 @@ class PlMonedaController extends Controller
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $plMoneda.
             $em = $this->getDoctrine()->getManager();
             $em->persist($plMoneda);
             $em->flush();

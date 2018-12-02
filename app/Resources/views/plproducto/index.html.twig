@@ -11,27 +11,28 @@
 
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Plproductos list</h1>
+                <h1 class="page-header">Listado de Productos</h1>
             </div>
         </div><!--/.row-->
 
         <div class="row">
             <div class="col-lg-12">
                 <div class="panel panel-default">
-                    <div class="panel-heading">DescripcionModulo</div>
+                    <div class="panel-heading">Administracion de todos los productos ingresados en el sistema.</div>
                     <div class="panel-body">
                         <div class="col-md-12">
 
                             <table data-toggle="table">
                                 <thead>
                                 <tr>
-                                        <th>Id</th>
-                                        <th>Pronombre</th>
-                                        <th>Proprecio</th>
-                                        <th>Propuntos</th>
-                                        <th>Procreatedat</th>
-                                        <th>Proupdatedat</th>
-                                        <th>Proactive</th>
+                                        <th>ID</th>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Moneda</th>
+                                        <th>Puntos</th>
+                                        <th>Pais</th>
+                                        <th>Activo</th>
                                     <th>Actions</th>
                                 </tr>
                                 </thead>
@@ -39,11 +40,12 @@
                                 {% for plProducto in plProductos %}
                                 <tr>
                                             <td><a href="{{ path('producto_show', { 'id': plProducto.id }) }}">{{ plProducto.id }}</a></td>
+                                            <td><img src="{{ asset('uploads/images/' ~ plProducto.proPath) }}" height="50" width="50"></td>
                                             <td>{{ plProducto.proNombre }}</td>
                                             <td>{{ plProducto.proPrecio }}</td>
+                                            <td>{{ plProducto.proMo }}</td>
                                             <td>{{ plProducto.proPuntos }}</td>
-                                            <td>{% if plProducto.proCreatedAt %}{{ plProducto.proCreatedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
-                                            <td>{% if plProducto.proUpdatedAt %}{{ plProducto.proUpdatedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                                            <td>{{ plProducto.proPa }}</td>
                                             <td>{% if plProducto.proActive %}Yes{% else %}No{% endif %}</td>
                                             <td>
                                                 <ul>
@@ -59,10 +61,10 @@
                                 {% endfor %}
                                 </tbody>
                             </table>
-
+                            <br>
                             <ul>
                                     <li>
-                                        <a href="{{ path('producto_new') }}">Create a new plProducto</a>
+                                        <a class="btn btn-success" href="{{ path('producto_new') }}">Crear Nuevo Producto</a>
                                     </li>
                                 </ul>                        </div>
                     </div>

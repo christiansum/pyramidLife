@@ -5,16 +5,16 @@
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
 					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
+					<span class="icon-bar">drer</span>
+					<span class="icon-bar">sdsdf</span>
+					<span class="icon-bar">sdfsd</span>
 				</button>
 				<a class="navbar-brand" href="#"><span>PyramidLife</span> Ventas</a>
 				<ul class="user-menu">
 					<li class="dropdown pull-right">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> {% if is_granted("ROLE_USER") %}{{ app.user.username }}{% endif %} <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
-							<li><a href="{#{{path('users_show', { 'id': app.user.id  })}}#}"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Profile</a></li>
+							<li><a href="{{path('usuarios_show', { 'id': app.user.id  })}}"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Profile</a></li>
 							<li><a href="{{ path('fos_user_security_logout') }}"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Logout</a></li>
 						</ul>
 					</li>
@@ -28,6 +28,39 @@
 	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
 		<ul class="nav menu">
 			<li class="active"><a href="{{path('pylife_homepage')}}"><svg class="glyph stroked home"><use xlink:href="#stroked-home"/></svg> Home</a></li>
+			<li><a href="{{path('miprogreso_index')}}"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Mi Progreso</a></li>
+			<li><a href="{{path('rangos_index')}}"><svg class="glyph stroked basket "><use xlink:href="#stroked-basket"/></svg> Comprar Productos</a></li>
+			<li><a href="{{path('rangos_index')}}"><svg class="glyph stroked male-userz"><use xlink:href="#stroked-dashboard-dial"></use></svg> Tus Referidos</a></li>
+			<li role="presentation" class="divider"></li>
+			<li class="parent">
+				<a href="">
+					<span class="icon glyphicon glyphicon-list collapsed" data-toggle="collapse" href="#sub-item-1"> Catalogos
+					<span  class="icon collapsed"><em class="glyphicon glyphicon-s glyphicon-plus glyphicon-minus"></em></span></span>
+				</a>
+				<ul class="children collapse" id="sub-item-1">
+					<li><a href="{{path('rangos_index')}}"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"/></svg> Rangos</a></li>
+					<li><a href="{{path('tipena_index')}}"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"/></svg> Penalizaciones</a></li>
+					<li><a href="{{path('producto_index')}}"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"/></svg> Productos</a></li>
+					<li><a href="{{path('premio_index')}}"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"/></svg> Premios</a></li>
+					<li><a href="{{path('pais_index')}}"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"/></svg> Paises</a></li>
+					<li><a href="{{path('moneda_index')}}"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"/></svg> Moneda</a></li>
+					<li><a href="{{path('periopre_index')}}"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"/></svg> Premiaciones</a></li>
+					<li><a href="{{path('usuarios_index')}}"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"/></svg> Usuarios/Socios</a></li>
+					<li><a href="{{path('roles_index')}}"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"/></svg> Roles</a></li>
+					<li><a href="{{path('arbol_index')}}"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"/></svg> Piramde/Organizaxion</a></li>
+
+					<li><br><br><br></li>
+				</ul>
+			</li>
 		</ul>
 	</div><!--/.sidebar-->
+	<script>
+	    $(document).ready(function(){
+	        $( '#sidebar-collapse .navbar-nav a' ).on( 'click', function () {
+		        $( '#sidebar-collapse .navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
+		        $( this ).parent( 'li' ).addClass( 'active' );
+	        });
+		})
+
+	</script>
 {% endblock %}

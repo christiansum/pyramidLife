@@ -43,6 +43,13 @@ PylifeBundle\Entity\PlProducto:
             options:
                 unsigned: false
             column: pro_puntos
+        proPath:
+            type: string
+            nullable: false
+            length: 200
+            options:
+                fixed: false
+            column: pro_path
         proCreatedAt:
             type: datetime
             nullable: false
