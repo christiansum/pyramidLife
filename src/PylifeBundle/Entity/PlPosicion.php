@@ -388,4 +388,7 @@ class PlPosicion
     {
         return $this->posUsrUpdatedBy;
     }
+	public function __toString(){
+		return $this->posNombre;
+	}
 }

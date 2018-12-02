@@ -286,4 +286,8 @@ class PlTipoPenalizacion
     {
         return $this->ptiUsrUpdatedBy;
     }
+	
+	public function __toString(){
+		return $this->ptiNombre;
+	}
 }

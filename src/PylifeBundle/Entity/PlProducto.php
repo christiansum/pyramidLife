@@ -354,4 +354,8 @@ class PlProducto
     {
         return $this->proUsrUpdatedBy;
     }
+	
+	public function __toString(){
+		return $this->proNombre;
+	}
 }

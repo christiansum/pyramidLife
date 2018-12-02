@@ -224,4 +224,8 @@ class PlRole
     {
         return $this->rolUsrUpdatedBy;
     }
+	
+	public function __toString(){
+		return $this->rolNombre;
+	}
 }

@@ -472,4 +472,8 @@ class PlRango
     {
         return $this->raUsrUpdatedBy;
     }
+	
+	public function __toString(){
+		return $this->raNombre;
+	}
 }

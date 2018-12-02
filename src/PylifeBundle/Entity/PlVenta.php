@@ -261,4 +261,8 @@ class PlVenta
     {
         return $this->venUsrUpdatedBy;
     }
+	
+	public function __toString(){
+		return "venta_".$this->id;
+	}
 }

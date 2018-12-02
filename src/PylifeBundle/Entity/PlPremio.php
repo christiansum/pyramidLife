@@ -258,4 +258,8 @@ class PlPremio
     {
         return $this->preUsrUpdatedBy;
     }
+	
+	public function __toString(){
+		return $this->preNombre;
+	}
 }

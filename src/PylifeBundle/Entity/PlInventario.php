@@ -289,4 +289,8 @@ class PlInventario
     {
         return $this->invUsrUpdatedBy;
     }
+	
+	public function __toString(){
+		return "inventario_".$this->id;
+	}
 }

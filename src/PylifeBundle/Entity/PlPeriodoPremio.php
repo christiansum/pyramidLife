@@ -286,4 +286,8 @@ class PlPeriodoPremio
     {
         return $this->ppUsrUpdatedBy;
     }
+	
+	public function __toString(){
+		return $this->ppNombre;
+	}
 }
