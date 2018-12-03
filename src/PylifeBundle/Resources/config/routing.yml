@@ -1,3 +1,7 @@
+pylife_miprogreso:
+    resource: "@PylifeBundle/Resources/config/routing/miprogreso.yml"
+    prefix:   /miprogreso
+
 pylife_arbol:
     resource: "@PylifeBundle/Resources/config/routing/plpiramide.yml"
     prefix:   /arbol
@@ -57,3 +61,11 @@ pylife_pais:
 pylife_homepage:
     path:     /
     defaults: { _controller: PylifeBundle:Default:index }
+
+index:
+    path:     /index
+    defaults: { _controller: PylifeBundle:MisCompras:index }
+
+new:
+    path:     /new
+    defaults: { _controller: PylifeBundle:MisCompras:new }

@@ -6,6 +6,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 
 class PlRangoType extends AbstractType
 {
@@ -23,7 +24,17 @@ class PlRangoType extends AbstractType
 			->add('raCantSupervisores')
 			->add('raPosicion')
 			->add('raTiempoConsecutivo')
-			->add('raTipoTiempo')
+			->add('raTipoTiempo', ChoiceType::class, array(
+				'choices'  => array(
+					'Seleccione una opcion...' => "",
+					'No Aplica' => "0",
+					'Semana' => 1,
+					'Mes' => 2,
+					'Año' => 3,
+				),
+				// *this line is important*
+				'choices_as_values' => true,
+			))
 			->add('raCreatedAt', DateTimeType::class, array(
 				'widget' => 'single_text',
 				'html5' => false,

@@ -38,7 +38,6 @@ class PlRangoController extends Controller
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $plRango.
             $em = $this->getDoctrine()->getManager();
             $em->persist($plRango);
             $em->flush();

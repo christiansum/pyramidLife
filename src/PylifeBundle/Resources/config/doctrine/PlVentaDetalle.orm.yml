@@ -36,6 +36,12 @@ PylifeBundle\Entity\PlVentaDetalle:
             options:
                 unsigned: false
             column: vd_suma_puntos
+        vdSumaMonto:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            column: vd_suma_monto
         vdCreatedAt:
             type: datetime
             nullable: false

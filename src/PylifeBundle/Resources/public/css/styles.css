@@ -42,6 +42,9 @@ h3, h4 {
 	font-size: 2em;
 }
 
+.medText {
+	font-size: 1.45em;
+}
 .text-muted {
 	color: #9fadbb;
 }
@@ -345,6 +348,7 @@ a.bg-danger:hover {
 .panel-teal { background: #1ebfae; color: #fff; }
 .panel-orange { background: #ffb53e; color: #fff; }
 .panel-red { background: #f9243f; color: #fff; }
+.panel-green { background: #5cd661; color: #fff; }
 
 .panel-blue .panel-body p,
 .panel-teal .panel-body p,

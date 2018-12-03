@@ -5,7 +5,7 @@ namespace PylifeBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
-use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
 
 class PlUserType extends AbstractType
 {
@@ -17,11 +17,19 @@ class PlUserType extends AbstractType
         $builder
 			->add('usrNombre')
 			->add('usrApellido')
-			->add('usrFechaNacimiento')
+			->add('usrFechaNacimiento', DateType::class, array(
+				'widget' => 'single_text',
+				'html5' => false,
+				'attr' => ['class' => 'js-datetimepicker'],
+			))
 			->add('usrNit')
 			->add('usrDireccion')
 			->add('usrPa')
-;
+			->add('username')
+			->add('email')
+			->add('password')
+			->add('roles')
+	   ;
     }/**
      * {@inheritdoc}
      */

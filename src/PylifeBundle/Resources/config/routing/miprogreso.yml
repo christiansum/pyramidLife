@@ -1,0 +1,24 @@
+miprogreso_index:
+    path:     /
+    defaults: { _controller: "PylifeBundle:MiProgreso:index" }
+    methods:  GET
+
+#pais_show:
+    #path:     /{id}/show
+    #defaults: { _controller: "PylifeBundle:PlPais:show" }
+    #methods:  GET
+
+#pais_new:
+    #path:     /new
+    #defaults: { _controller: "PylifeBundle:PlPais:new" }
+    #methods:  [GET, POST]
+
+#pais_edit:
+    #path:     /{id}/edit
+    #defaults: { _controller: "PylifeBundle:PlPais:edit" }
+    #methods:  [GET, POST]
+
+#pais_delete:
+    #path:     /{id}/delete
+    #defaults: { _controller: "PylifeBundle:PlPais:delete" }
+    #methods:  DELETE

@@ -38,7 +38,6 @@ class PlUserController extends Controller
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $plUser.
             $em = $this->getDoctrine()->getManager();
             $em->persist($plUser);
             $em->flush();

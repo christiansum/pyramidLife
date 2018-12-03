@@ -40,7 +40,7 @@
                                             <td><a href="{{ path('usuarios_show', { 'id': plUser.id }) }}">{{ plUser.id }}</a></td>
                                             <td>{{ plUser.usrNombre }}</td>
                                             <td>{{ plUser.usrApellido }}</td>
-                                            <td>{% if plUser.usrFechaNacimiento %}{{ plUser.usrFechaNacimiento|date('Y-m-d H:i:s') }}{% endif %}</td>
+                                            <td>{% if plUser.usrFechaNacimiento %}{{ plUser.usrFechaNacimiento|date('Y-m-d') }}{% endif %}</td>
                                             <td>{{ plUser.usrNit }}</td>
                                             <td>{{ plUser.usrDireccion }}</td>
                                             <td>
@@ -57,10 +57,10 @@
                                 {% endfor %}
                                 </tbody>
                             </table>
-
+                            <br>
                             <ul>
                                     <li>
-                                        <a href="{{ path('usuarios_new') }}">Create a new plUser</a>
+                                        <a class="btn btn-success"  href="{{ path('usuarios_new') }}">Create a new plUser</a>
                                     </li>
                                 </ul>                        </div>
                     </div>

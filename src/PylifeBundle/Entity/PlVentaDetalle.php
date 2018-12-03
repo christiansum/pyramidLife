@@ -36,6 +36,13 @@ class PlVentaDetalle
     private $vdSumaPuntos;
 
     /**
+     * @var float
+     *
+     * @ORM\Column(name="vd_suma_monto", type="float", precision=10, scale=0, nullable=false)
+     */
+    private $vdSumaMonto;
+
+    /**
      * @var \DateTime
      *
      * @ORM\Column(name="vd_created_at", type="datetime", nullable=false)
@@ -54,7 +61,7 @@ class PlVentaDetalle
      *
      * @ORM\Column(name="vd_active", type="boolean", nullable=false)
      */
-    private $vdActive = true;
+    private $vdActive = '1';
 
     /**
      * @var \PylifeBundle\Entity\PlInventario
@@ -154,6 +161,30 @@ class PlVentaDetalle
     public function getVdSumaPuntos()
     {
         return $this->vdSumaPuntos;
+    }
+
+    /**
+     * Set vdSumaMonto
+     *
+     * @param float $vdSumaMonto
+     *
+     * @return PlVentaDetalle
+     */
+    public function setVdSumaMonto($vdSumaMonto)
+    {
+        $this->vdSumaMonto = $vdSumaMonto;
+
+        return $this;
+    }
+
+    /**
+     * Get vdSumaMonto
+     *
+     * @return float
+     */
+    public function getVdSumaMonto()
+    {
+        return $this->vdSumaMonto;
     }
 
     /**
