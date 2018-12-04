@@ -15,6 +15,9 @@
 		public function buildForm(FormBuilderInterface $builder, array $options)
 		{
 			$builder
+				->add('pyUsrParent')
+				->add('pyUsrChild')
+				->add('pyUsrCreatedBy')
 				->add('pyCreatedAt', DateTimeType::class, array(
 						'widget' => 'single_text',
 						'html5' => false,
@@ -26,11 +29,12 @@
 						'attr' => ['class' => 'js-datetimepicker'],
 						'required'   => false,
 				))
-				->add('pyActive')
-				->add('pyUsrChild')
-				->add('pyUsrCreatedBy')
-				->add('pyUsrParent')
 				->add('pyUsrUpdatedBy')
+				->add('pyActive')
+				
+				
+				
+				
 			;
 		}
 		/**

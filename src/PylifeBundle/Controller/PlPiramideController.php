@@ -38,7 +38,6 @@ class PlPiramideController extends Controller
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $plPiramide.
             $em = $this->getDoctrine()->getManager();
             $em->persist($plPiramide);
             $em->flush();

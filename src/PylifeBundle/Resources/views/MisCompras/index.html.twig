@@ -87,6 +87,29 @@
 							<div class="clearfix"></div>
 							<hr>
 							<div class="row col-md-11 col-lg-11">
+								<h3>Datos de Cliente</h3>
+								<div class="form-group col-lg-5 col-md-5">
+									<label for="nombreFactura" class="control-label">Nombre de Facturacion</label>
+									<h4 id="nombreFactura">{{ usuario.usrNombre}} {{ usuario.usrApellido }}</h4>
+								</div>
+								<div class="form-group col-lg-5 col-md-5">
+									<label for="usrNit" class="control-label">NIT</label>
+									<h4 id="usrNit">{{ usuario.usrNit }}</h4>
+								</div>
+							</div>
+							<div class="row col-md-11 col-lg-11">
+								<div class="form-group col-lg-5 col-md-5">
+									<label for="usrDireccion" class="control-label">Direccion de Envio</label>
+									<h4 id="usrDireccion">{{ usuario.usrDireccion }}</h4>
+								</div>
+								<div class="form-group col-lg-5 col-md-5">
+									<label for="usrPa" class="control-label">Pais</label>
+									<h4 id="usrPa">{{ usuario.usrPa }}</h4>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+							<hr>
+							<div class="row col-md-11 col-lg-11">
 								<div class="form-group col-lg-2 col-md-2">
 									<label for="saveCompra" class="control-label"> </label>
 									<input type="button" name="saveCompra" id="saveCompra" class="btn btn-success" value="Realizar Compra">
