@@ -62,7 +62,7 @@ class PlUser extends BaseUser
      *
      * @ORM\ManyToOne(targetEntity="PylifeBundle\Entity\PlPais")
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="usr_pa_id", referencedColumnName="id")
+     *   @ORM\JoinColumn(name="usr_pzzza_id", referencedColumnName="id")
      * })
      */
     private $usrPa;

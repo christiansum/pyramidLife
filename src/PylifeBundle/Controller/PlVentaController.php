@@ -38,7 +38,6 @@ class PlVentaController extends Controller
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $plVentum.
             $em = $this->getDoctrine()->getManager();
             $em->persist($plVentum);
             $em->flush();

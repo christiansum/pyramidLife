@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6f29f99-2ca5-4627-8c2b-015ca19dc7b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pyramidLife.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pyramidLife.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/plinventario/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/plinventario/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Controller/MiProgresoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Controller/MiProgresoController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Controller/MisComprasController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Controller/MisComprasController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Controller/PlInventarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Controller/PlInventarioController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Controller/PlTipoPenalizacionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Controller/PlTipoPenalizacionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlProducto.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlProducto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlVentaDetalle.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlVentaDetalle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Form/PlInventarioType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Form/PlInventarioType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Resources/config/doctrine/PlVentaDetalle.orm.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Resources/config/doctrine/PlVentaDetalle.orm.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Resources/config/routing.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Resources/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Resources/public/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Controller/PlVentaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Controller/PlVentaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Entity/PlUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Form/PlPiramideType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Form/PlPiramideType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Resources/views/MiProgreso/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Resources/views/MiProgreso/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Resources/views/MisCompras/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Resources/views/MisCompras/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PylifeBundle/Resources/views/header.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/PylifeBundle/Resources/views/header.html.twig" afterDir="false" />
       <change beforePath="C:/xampp5636/htdocs/clinic_tracker_gt/apps/frontend/modules/consultationgt/actions/actions.class.php" beforeDir="false" afterPath="C:/xampp5636/htdocs/clinic_tracker_gt/apps/frontend/modules/consultationgt/actions/actions.class.php" afterDir="false" />
       <change beforePath="C:/xampp5636/htdocs/clinic_tracker_gt/cache/.ignore" beforeDir="false" />
       <change beforePath="C:/xampp5636/htdocs/clinic_tracker_gt/config/doctrine/schema.yml" beforeDir="false" afterPath="C:/xampp5636/htdocs/clinic_tracker_gt/config/doctrine/schema.yml" afterDir="false" />
@@ -39,7 +30,7 @@
       <content type="file-editors">
         <state>
           <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file pinned="false" current-in-tab="true">
+            <file pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Resources/config/routing.yml">
                 <provider selected="true" editor-type-id="text-editor">
                   <state relative-caret-position="462">
@@ -74,8 +65,20 @@
             <file pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Resources/views/MiProgreso/index.html.twig">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="116">
-                    <caret line="62" column="20" selection-start-line="60" selection-start-column="5" selection-end-line="62" selection-end-column="20" />
+                  <state relative-caret-position="368">
+                    <caret line="65" column="46" selection-start-line="65" selection-start-column="46" selection-end-line="65" selection-end-column="46" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Resources/views/MisCompras/index.html.twig">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="415">
+                    <caret line="175" column="91" selection-start-line="175" selection-start-column="91" selection-end-line="175" selection-end-column="91" />
+                    <folding>
+                      <element signature="e#102#109#1" expanded="true" />
+                    </folding>
                   </state>
                 </provider>
               </entry>
@@ -88,25 +91,80 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Controller/MiProgresoController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="924">
+              <caret line="44" column="76" selection-start-line="35" selection-start-column="20" selection-end-line="44" selection-end-column="76" />
+              <folding>
+                <element signature="e#43#56#0#PHP" expanded="true" />
+                <element signature="e#375#396#1#PHP" expanded="true" />
+                <element signature="e#384#406#1#PHP" expanded="true" />
+                <element signature="e#1064#1086#1#PHP" expanded="true" />
+                <element signature="e#1094#1125#1#PHP" expanded="true" />
+                <element signature="e#1712#1734#1#PHP" expanded="true" />
+                <element signature="e#1792#1814#1#PHP" expanded="true" />
+                <element signature="e#2237#2266#1#PHP" expanded="true" />
+                <element signature="e#3163#3175#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Entity/PlHistorialRango.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="49" column="47" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Controller/MisComprasController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="34" column="42" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="42" />
+            <state relative-caret-position="1155">
+              <caret line="118" column="21" selection-start-line="118" selection-start-column="16" selection-end-line="118" selection-end-column="21" />
               <folding>
-                <element signature="e#43#100#0#PHP" expanded="true" />
+                <element signature="e#43#82#0#PHP" expanded="true" />
+                <element signature="e#1791#1820#1#PHP" expanded="true" />
+                <element signature="e#2717#2729#0#PHP" expanded="true" />
+                <element signature="e#3497#3528#1#PHP" expanded="true" />
+                <element signature="e#3875#3897#1#PHP" expanded="true" />
+                <element signature="e#3977#3999#1#PHP" expanded="true" />
+                <element signature="e#4042#4063#1#PHP" expanded="true" />
+                <element signature="e#1920#1941#1#PHP" expanded="true" />
+                <element signature="e#2317#2342#1#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Resources/views/MisCompras/index.html.twig">
+        <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Form/PlPiramideType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="126" column="48" lean-forward="true" selection-start-line="126" selection-start-column="48" selection-end-line="126" selection-end-column="48" />
+            <state relative-caret-position="588">
+              <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Controller/PlVentaController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="693">
+              <caret line="42" column="25" selection-start-line="41" selection-start-column="12" selection-end-line="42" selection-end-column="25" />
               <folding>
-                <element signature="e#99#106#1" expanded="true" />
+                <element signature="e#43#75#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/xampp5636/htdocs/clinic_tracker_gt/apps/frontend/modules/supplementaryexam/templates/indexSuccess.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="777">
+              <caret line="193" column="15" selection-start-line="175" selection-start-column="12" selection-end-line="193" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -124,20 +182,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Entity/PlProducto.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="390" column="38" selection-start-line="390" selection-start-column="38" selection-end-line="390" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>(?&lt;![\t\s])\n-&gt;add</find>
       <find>\-\&gt;add\(</find>
       <find>(?&lt;![\t\s])([\)])?-&gt;add</find>
       <find>([\n])-&gt;add</find>
@@ -167,6 +215,7 @@
       <find>center</find>
       <find>existencia</find>
       <find>.</find>
+      <find>inv</find>
     </findStrings>
     <replaceStrings>
       <replace>bundles/pylife</replace>
@@ -210,8 +259,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/PylifeBundle/Form/PlPaisType.php" />
-        <option value="$PROJECT_DIR$/src/PylifeBundle/Entity/PlPais.php" />
         <option value="$PROJECT_DIR$/src/PylifeBundle/Entity/PlPosicion.php" />
         <option value="$PROJECT_DIR$/src/PylifeBundle/Entity/PlPremio.php" />
         <option value="$PROJECT_DIR$/src/PylifeBundle/Entity/PlRango.php" />
@@ -235,7 +282,6 @@
         <option value="$PROJECT_DIR$/src/PylifeBundle/Controller/PlProductoController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/plproducto/index.html.twig" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
-        <option value="$PROJECT_DIR$/src/PylifeBundle/Entity/PlUser.php" />
         <option value="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/views/new.html.twig.twig" />
         <option value="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/views/show.html.twig.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/pluser/new.html.twig" />
@@ -245,22 +291,25 @@
         <option value="$PROJECT_DIR$/src/PylifeBundle/Form/PlRangoType.php" />
         <option value="$PROJECT_DIR$/src/PylifeBundle/Controller/PlRangoController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/plrango/edit.html.twig" />
-        <option value="$PROJECT_DIR$/src/PylifeBundle/Controller/MiProgresoController.php" />
-        <option value="$PROJECT_DIR$/src/PylifeBundle/Resources/views/MiProgreso/index.html.twig" />
         <option value="$PROJECT_DIR$/src/PylifeBundle/Resources/public/css/styles.css" />
         <option value="$PROJECT_DIR$/src/PylifeBundle/Resources/config/routing/miscompras.yml" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/src/PylifeBundle/Controller/MisComprasController.php" />
         <option value="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/actions/new.php.twig" />
         <option value="$PROJECT_DIR$/src/PylifeBundle/Controller/PlTipoPenalizacionController.php" />
         <option value="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/views/index.html.twig.twig" />
         <option value="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/views/edit.html.twig.twig" />
         <option value="$PROJECT_DIR$/src/PylifeBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/PylifeBundle/Resources/views/header.html.twig" />
-        <option value="$PROJECT_DIR$/src/PylifeBundle/Entity/PlProducto.php" />
         <option value="$PROJECT_DIR$/src/PylifeBundle/Form/PlInventarioType.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/PylifeBundle/Entity/PlUser.php" />
+        <option value="$PROJECT_DIR$/src/PylifeBundle/Entity/PlProducto.php" />
+        <option value="$PROJECT_DIR$/src/PylifeBundle/Controller/PlVentaController.php" />
+        <option value="$PROJECT_DIR$/src/PylifeBundle/Resources/views/MiProgreso/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/PylifeBundle/Controller/MiProgresoController.php" />
+        <option value="$PROJECT_DIR$/src/PylifeBundle/Controller/MisComprasController.php" />
         <option value="$PROJECT_DIR$/src/PylifeBundle/Resources/views/MisCompras/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/PylifeBundle/Form/PlPiramideType.php" />
       </list>
     </option>
   </component>
@@ -417,6 +466,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="PylifeBundle" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="doctrine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pyramidLife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pyramidLife" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="PylifeBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -435,75 +493,42 @@
             </path>
             <path>
               <item name="pyramidLife" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pyramidLife" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="sensio" type="462c0819:PsiDirectoryNode" />
+              <item name="clinic_tracker_gt" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pyramidLife" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pyramidLife" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="sensio" type="462c0819:PsiDirectoryNode" />
-              <item name="generator-bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="clinic_tracker_gt" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pyramidLife" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pyramidLife" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="sensio" type="462c0819:PsiDirectoryNode" />
-              <item name="generator-bundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="clinic_tracker_gt" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pyramidLife" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pyramidLife" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="sensio" type="462c0819:PsiDirectoryNode" />
-              <item name="generator-bundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="skeleton" type="462c0819:PsiDirectoryNode" />
+              <item name="clinic_tracker_gt" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pyramidLife" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pyramidLife" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="sensio" type="462c0819:PsiDirectoryNode" />
-              <item name="generator-bundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="skeleton" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="clinic_tracker_gt" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="supplementaryexam" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pyramidLife" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pyramidLife" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="sensio" type="462c0819:PsiDirectoryNode" />
-              <item name="generator-bundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="skeleton" type="462c0819:PsiDirectoryNode" />
-              <item name="crud" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pyramidLife" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pyramidLife" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="sensio" type="462c0819:PsiDirectoryNode" />
-              <item name="generator-bundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="skeleton" type="462c0819:PsiDirectoryNode" />
-              <item name="crud" type="462c0819:PsiDirectoryNode" />
-              <item name="actions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pyramidLife" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pyramidLife" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="sensio" type="462c0819:PsiDirectoryNode" />
-              <item name="generator-bundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="skeleton" type="462c0819:PsiDirectoryNode" />
-              <item name="crud" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="clinic_tracker_gt" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="supplementaryexam" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -553,12 +578,12 @@
       <workItem from="1543704201070" duration="8151000" />
       <workItem from="1543713783835" duration="228000" />
       <workItem from="1543714043728" duration="63749000" />
-      <workItem from="1543893291253" duration="9559000" />
+      <workItem from="1543893291253" duration="26338000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143304000" />
+    <option name="totallyTimeSpent" value="160083000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-199" width="1936" height="1056" extended-state="6" />
@@ -612,95 +637,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Resources/config/doctrine/PlUser.orm.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-561">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/views/show.html.twig.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Entity/PlUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-          <folding>
-            <element signature="e#39#81#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/skeleton/crud/views/new.html.twig.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Form/PlVentaType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="16" selection-start-line="17" selection-start-column="35" selection-end-line="21" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/pluser/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
-          <folding>
-            <element signature="e#16#46#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Controller/PlUserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="39" column="55" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Form/PlUserType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-          <folding>
-            <element signature="e#37#77#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Entity/PlVenta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="62" column="19" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Form/PlRangoType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
-          <folding>
-            <element signature="e#37#77#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/plrango/edit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="819">
@@ -735,13 +671,6 @@
           <folding>
             <element signature="e#216#254#1#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Resources/config/routing/miscompras.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -791,13 +720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Controller/MiProgresoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="114" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="114" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="861">
@@ -819,13 +741,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2226">
           <caret line="106" column="229" selection-start-line="106" selection-start-column="207" selection-end-line="106" selection-end-column="229" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Resources/views/MiProgreso/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="62" column="20" selection-start-line="60" selection-start-column="5" selection-end-line="62" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -857,16 +772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Controller/MisComprasController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="34" column="42" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="42" />
-          <folding>
-            <element signature="e#43#100#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -947,13 +852,6 @@
         <state relative-caret-position="-414" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Entity/PlProducto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="390" column="38" selection-start-line="390" selection-start-column="38" selection-end-line="390" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Form/PlInventarioType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -974,6 +872,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="26" column="95" selection-start-line="26" selection-start-column="95" selection-end-line="26" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/xampp5636/htdocs/clinic_tracker_gt/apps/frontend/modules/supplementaryexam/templates/indexSuccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="193" column="15" selection-start-line="175" selection-start-column="12" selection-end-line="193" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Resources/config/routing/miscompras.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="14" selection-start-line="5" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Controller/PlMonedaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-813">
+          <caret line="50" column="11" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="50" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Entity/PlVenta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="766">
+          <caret line="62" column="19" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Entity/PlUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="64" column="39" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
+          <folding>
+            <element signature="e#39#81#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Entity/PlProducto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="116" column="6" lean-forward="true" selection-start-line="116" selection-start-column="6" selection-end-line="116" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/plinventario/edit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -985,27 +942,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Resources/config/routing.yml">
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Controller/PlVentaController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
+        <state relative-caret-position="693">
+          <caret line="42" column="25" selection-start-line="41" selection-start-column="12" selection-end-line="42" selection-end-column="25" />
+          <folding>
+            <element signature="e#43#75#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Entity/PlVentaDetalle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="99" column="16" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Resources/config/doctrine/PlVentaDetalle.orm.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Resources/config/routing/plventa.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="10" selection-start-line="5" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Resources/config/doctrine/PlHistorialRango.orm.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
-          <caret line="26" column="95" selection-start-line="26" selection-start-column="95" selection-end-line="26" selection-end-column="95" />
+          <caret line="44" column="19" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Entity/PlHistorialRango.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="49" column="47" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Resources/views/MiProgreso/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="65" column="46" selection-start-line="65" selection-start-column="46" selection-end-line="65" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Controller/MiProgresoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="44" column="76" selection-start-line="35" selection-start-column="20" selection-end-line="44" selection-end-column="76" />
+          <folding>
+            <element signature="e#43#56#0#PHP" expanded="true" />
+            <element signature="e#375#396#1#PHP" expanded="true" />
+            <element signature="e#384#406#1#PHP" expanded="true" />
+            <element signature="e#1064#1086#1#PHP" expanded="true" />
+            <element signature="e#1094#1125#1#PHP" expanded="true" />
+            <element signature="e#1712#1734#1#PHP" expanded="true" />
+            <element signature="e#1792#1814#1#PHP" expanded="true" />
+            <element signature="e#2237#2266#1#PHP" expanded="true" />
+            <element signature="e#3163#3175#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Resources/views/MisCompras/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="126" column="48" lean-forward="true" selection-start-line="126" selection-start-column="48" selection-end-line="126" selection-end-column="48" />
+        <state relative-caret-position="415">
+          <caret line="175" column="91" selection-start-line="175" selection-start-column="91" selection-end-line="175" selection-end-column="91" />
           <folding>
-            <element signature="e#99#106#1" expanded="true" />
+            <element signature="e#102#109#1" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Controller/MisComprasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="118" column="21" selection-start-line="118" selection-start-column="16" selection-end-line="118" selection-end-column="21" />
+          <folding>
+            <element signature="e#43#82#0#PHP" expanded="true" />
+            <element signature="e#1791#1820#1#PHP" expanded="true" />
+            <element signature="e#2717#2729#0#PHP" expanded="true" />
+            <element signature="e#3497#3528#1#PHP" expanded="true" />
+            <element signature="e#3875#3897#1#PHP" expanded="true" />
+            <element signature="e#3977#3999#1#PHP" expanded="true" />
+            <element signature="e#4042#4063#1#PHP" expanded="true" />
+            <element signature="e#1920#1941#1#PHP" expanded="true" />
+            <element signature="e#2317#2342#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PylifeBundle/Form/PlPiramideType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
         </state>
       </provider>
     </entry>

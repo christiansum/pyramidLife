@@ -65,7 +65,7 @@
 								</div>
 							</div>
 							<hr>
-							<div id="listProduct_div">
+							<div id="listProduct_div" class=" col-md-12 col-lg-12">
 								<table id="listProduct" data-toggle="table" data-search="true" data-pagination="true" data-unique-id="id">
 									<thead>
 									<tr>
@@ -73,17 +73,26 @@
 										<th data-field="id">ID</th>
 										<th data-field="proNombre">Nombre</th>
 										<th data-field="proCantidad">Cantidad</th>
-										<th data-field="proPuntos">Puntos</th>
+										<th data-field="proPuntosUnidad">Puntos</th>
 										<th data-field="proMonto">Monto</th>
+										<th data-field="proDesc">Descuento</th>
+										<th data-field="proPuntos">Puntos Totales</th>
 										<th data-field="proSubTotal">Sub Total</th>
+										<th data-field="proSubTotalDescuento">Total Descuento</th>
 										<th data-field="proActions"></th>
 									</tr>
 									</thead>
-									<tbody>
-									
-									</tbody>
 								</table>
 							</div>
+							<div class="clearfix"></div>
+							<hr>
+							<div class="row col-md-11 col-lg-11">
+								<div class="form-group col-lg-2 col-md-2">
+									<label for="saveCompra" class="control-label"> </label>
+									<input type="button" name="saveCompra" id="saveCompra" class="btn btn-success" value="Realizar Compra">
+								</div>
+							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -95,7 +104,7 @@
 					</div>
 					<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 						<div class="panel-body">
-							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							{{ ventas|raw }}
 						</div>
 					</div>
 				</div>
@@ -107,6 +116,7 @@
 	</div><!-- /.row -->
 	<script>
 		var allPro = {{ existencias|raw }};
+		var raDesc = {{ rango.raDescuentoMin }} /100;
 		$(document).ready(function(){
 			$("#proName").on('change',function(){
 				var proId = parseInt($("#proName option:selected").val());
@@ -133,13 +143,24 @@
 					alert("Favor de indicar la cantidad de productos a comprar.");
 					return false;
 				}
+				var allDataTable = $('#listProduct').bootstrapTable('getData');
+				var repetido = false;
+				if (allDataTable.length > 0 ){
+					$.each(allDataTable ,function(index,data){
+						if (parseInt(data.id) == proId){
+							repetido = true;
+						}
+					});
+				}
+				
 				var rowCount = $('#listProduct tr').length;
 				
 				$.each(allPro,function(index,pro){
 					//$("#proExis").val()
-					if(pro.id === proId){
+					if(pro.id === proId && repetido == false){
 						allPro[index].exist -= parseInt($("#proCantidad").val());
 						$("#proExis").html(pro.exist);
+						var subTotal = parseInt(pro.proPrecio)*parseInt($("#proCantidad").val());
 						$('#listProduct').bootstrapTable('insertRow', {
 							index: rowCount +1,
 							row: {
@@ -147,15 +168,37 @@
 								id: pro.id,
 								proNombre: pro.proNombre,
 								proCantidad: parseInt($("#proCantidad").val()),
-								proPuntos: pro.proPuntos,
-								proMonto: pro.proPrecio,
-								proSubTotal: parseInt(pro.proPrecio)*parseInt($("#proCantidad").val()),
+								proPuntosUnidad: pro.proPuntos,
+								proPuntos: parseInt(pro.proPuntos)*parseInt($("#proCantidad").val()),
+								proMonto: "Q. "+pro.proPrecio,
+								proDesc: (raDesc*100) + "%",
+								proSubTotal: "Q. "+subTotal,
+								proSubTotalDescuento: subTotal - (raDesc*subTotal),
 								proActions: '<button type="button" class="close" aria-label="Close" onclick="removeRow('+pro.id+')"><span aria-hidden="true">&times;</span></button>'
 							}
 						});
 					}
 				});
 				
+			});
+			
+			$("#saveCompra").on('click',function(){
+				var allDataTable = $('#listProduct').bootstrapTable('getData');
+				if(allDataTable.length ===0 ){ alert("Por Favor ingrese productos en el carrito de compras para continuar con la compra."); return false; }
+				$.ajax({
+					async: true,
+					type: 'POST',
+					url: '{{ path('miscompras_new') }}',
+					datatype: 'json',
+					data: {'ventaDetalle':allDataTable},
+					success: function(data) {
+						if(data == 1){
+							alert("Su compra fue realizada exitosamente!.");
+							location.reload();
+						}
+						if( data != 1 ){ alert("Ha Ocurrido un error, vuelva a intentar. Si persiste, por favor contactar a IS");}
+					}
+				});
 			});
 			
 		});
