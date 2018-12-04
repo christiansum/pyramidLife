@@ -38,7 +38,6 @@ class PlTipoPenalizacionController extends Controller
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $plTipoPenalizacion.
             $em = $this->getDoctrine()->getManager();
             $em->persist($plTipoPenalizacion);
             $em->flush();

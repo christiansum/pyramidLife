@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * PlVentaDetalle
  *
- * @ORM\Table(name="pl_venta_detalle", indexes={@ORM\Index(name="fk_pl_inventario_pl_venta_detalle_idx", columns={"vd_id_inv"}), @ORM\Index(name="fk_pl_venta_pl_venta_detalle_idx", columns={"vd_id_ven"}), @ORM\Index(name="fk_pl_user_pl_venta_detalle_created_idx", columns={"vd_usr_created_by"}), @ORM\Index(name="fk_pl_user_pl_venta_detalle_updated_idx", columns={"vd_usr_updated_by"})})
+ * @ORM\Table(name="pl_venta_detalle", indexes={@ORM\Index(name="fk_pl_venta_pl_venta_detalle_idx", columns={"vd_id_ven"}), @ORM\Index(name="fk_pl_user_pl_venta_detalle_created_idx", columns={"vd_usr_created_by"}), @ORM\Index(name="fk_pl_user_pl_venta_detalle_updated_idx", columns={"vd_usr_updated_by"}), @ORM\Index(name="fk_pl_producto_pl_venta_detalle_idx", columns={"vd_id_pro"})})
  * @ORM\Entity
  */
 class PlVentaDetalle
@@ -64,14 +64,14 @@ class PlVentaDetalle
     private $vdActive = '1';
 
     /**
-     * @var \PylifeBundle\Entity\PlInventario
+     * @var \PylifeBundle\Entity\PlProducto
      *
-     * @ORM\ManyToOne(targetEntity="PylifeBundle\Entity\PlInventario")
+     * @ORM\ManyToOne(targetEntity="PylifeBundle\Entity\PlProducto")
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="vd_id_inv", referencedColumnName="id")
+     *   @ORM\JoinColumn(name="vd_id_pro", referencedColumnName="id")
      * })
      */
-    private $vdInv;
+    private $vdPro;
 
     /**
      * @var \PylifeBundle\Entity\PlUser
@@ -260,27 +260,27 @@ class PlVentaDetalle
     }
 
     /**
-     * Set vdInv
+     * Set vdPro
      *
-     * @param \PylifeBundle\Entity\PlInventario $vdInv
+     * @param \PylifeBundle\Entity\PlProducto $vdPro
      *
      * @return PlVentaDetalle
      */
-    public function setVdInv(\PylifeBundle\Entity\PlInventario $vdInv = null)
+    public function setVdPro(\PylifeBundle\Entity\PlProducto $vdPro = null)
     {
-        $this->vdInv = $vdInv;
+        $this->vdPro = $vdPro;
 
         return $this;
     }
 
     /**
-     * Get vdInv
+     * Get vdPro
      *
-     * @return \PylifeBundle\Entity\PlInventario
+     * @return \PylifeBundle\Entity\PlProducto
      */
-    public function getVdInv()
+    public function getVdPro()
     {
-        return $this->vdInv;
+        return $this->vdPro;
     }
 
     /**

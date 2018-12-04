@@ -16,7 +16,11 @@ class PlInventarioType extends AbstractType
     {
         $builder
 			->add('invCantidad')
-			->add('invFechaVencimiento')
+			->add('invFechaVencimiento', DateTimeType::class, array(
+					'widget' => 'single_text',
+					'html5' => false,
+					'attr' => ['class' => 'js-datetimepicker']
+			))
 			->add('invCreatedAt', DateTimeType::class, array(
 				'widget' => 'single_text',
 				'html5' => false,

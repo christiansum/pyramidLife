@@ -38,7 +38,6 @@ class PlInventarioController extends Controller
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $plInventario.
             $em = $this->getDoctrine()->getManager();
             $em->persist($plInventario);
             $em->flush();

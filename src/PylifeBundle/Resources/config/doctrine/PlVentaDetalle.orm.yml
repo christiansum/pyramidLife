@@ -2,9 +2,6 @@ PylifeBundle\Entity\PlVentaDetalle:
     type: entity
     table: pl_venta_detalle
     indexes:
-        fk_pl_inventario_pl_venta_detalle_idx:
-            columns:
-                - vd_id_inv
         fk_pl_venta_pl_venta_detalle_idx:
             columns:
                 - vd_id_ven
@@ -14,6 +11,9 @@ PylifeBundle\Entity\PlVentaDetalle:
         fk_pl_user_pl_venta_detalle_updated_idx:
             columns:
                 - vd_usr_updated_by
+        fk_pl_producto_pl_venta_detalle_idx:
+            columns:
+                - vd_id_pro
     id:
         id:
             type: integer
@@ -57,14 +57,14 @@ PylifeBundle\Entity\PlVentaDetalle:
                 default: '1'
             column: vd_active
     manyToOne:
-        vdInv:
-            targetEntity: PlInventario
+        vdPro:
+            targetEntity: PlProducto
             cascade: {  }
             fetch: LAZY
             mappedBy: null
             inversedBy: null
             joinColumns:
-                vd_id_inv:
+                vd_id_pro:
                     referencedColumnName: id
             orphanRemoval: false
         vdUsrCreatedBy:

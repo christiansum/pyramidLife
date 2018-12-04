@@ -22,7 +22,7 @@
                     <div class="panel-body">
                         <div class="col-md-12">
 
-                            <table data-toggle="table">
+                            <table data-toggle="table" data-search="true" data-pagination="true">
                                 <thead>
                                 <tr>
                                         <th>Id</th>
@@ -57,10 +57,10 @@
                                 {% endfor %}
                                 </tbody>
                             </table>
-
+                            <br>
                             <ul>
                                     <li>
-                                        <a href="{{ path('inventario_new') }}">Create a new plInventario</a>
+                                        <a class="btn btn-success"  href="{{ path('inventario_new') }}">Create a new plInventario</a>
                                     </li>
                                 </ul>                        </div>
                     </div>

@@ -1,7 +1,216 @@
-{% extends "::base.html.twig" %}
-
-{% block title %}PylifeBundle:MisCompras:index{% endblock %}
+{% extends 'PylifeBundle::header.html.twig' %}
 
 {% block body %}
-<h1>Welcome to the MisCompras:index page</h1>
+	<style>
+		.panel-heading {
+			height: auto;
+		}
+		.verticalCenter {
+			position: relative;
+			top: 50%;
+			-webkit-transform: translateY(75%);
+			-ms-transform: translateY(75%);
+			transform: translateY(75%);
+		}
+	
+	</style>
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="{{path('pylife_homepage')}}"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
+				<li class="active">Compra de Productos</li>
+			</ol>
+		</div><!--/.row-->
+		
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="page-header">Compra de Producto</h1>
+			</div>
+		</div><!--/.row-->
+		
+		<div class="row container">
+			<div class="panel-group col-lg-11 col-md-11" id="accordion" role="tablist" aria-multiselectable="true">
+				<div class="panel">
+					<div class="panel-heading panel-blue" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+						<h4 class="panel-title">
+							Realizar Compra
+						</h4>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+						<div class="panel-body">
+							<div class="row">
+								<div class="form-group col-lg-2 col-md-2">
+									<label for="proPath" class="control-label">Visualizacion</label>
+									<div id="proImg" class="text-center"></div>
+								</div>
+								<div class="form-group col-lg-5 col-md-5">
+									<label for="proName" class="control-label">Producto</label>
+									<select name="proName" id="proName" class="form-control">
+										<option value="">Seleccione un Producto...</option>
+										{% for plPros in plPro %}
+											<option value="{{ plPros.id }}">{{ plPros.proNombre }}</option>
+										{% endfor %}
+									</select>
+								</div>
+								<div class="form-group col-lg-2 col-md-2">
+									<label for="proCantidad" class="control-label">Cantidad</label>
+									<input type="number" id="proCantidad" value="0" class="form-control">
+									<div class="text-center">
+										<span  class="badge bg-warning text-center">Existencias <span id="proExis"></span></span>
+									</div>
+								</div>
+								<div class="form-group col-lg-2 col-md-2">
+									<label for="addPro" class="control-label"> </label>
+									<input type="button" name="addPro" id="addPro" class="btn btn-success  verticalCenter" value="Agregar">
+								</div>
+							</div>
+							<hr>
+							<div id="listProduct_div">
+								<table id="listProduct" data-toggle="table" data-search="true" data-pagination="true" data-unique-id="id">
+									<thead>
+									<tr>
+										<th data-field="proVisua">Visualizacion</th>
+										<th data-field="id">ID</th>
+										<th data-field="proNombre">Nombre</th>
+										<th data-field="proCantidad">Cantidad</th>
+										<th data-field="proPuntos">Puntos</th>
+										<th data-field="proMonto">Monto</th>
+										<th data-field="proSubTotal">Sub Total</th>
+										<th data-field="proActions"></th>
+									</tr>
+									</thead>
+									<tbody>
+									
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel">
+					<div class="panel-heading panel-teal" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						<h4 class="panel-title">
+							Compras Anteriores
+						</h4>
+					</div>
+					<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+						<div class="panel-body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- /.col-->
+		<div class="row">
+		
+		</div>
+	</div><!-- /.row -->
+	<script>
+		var allPro = {{ existencias|raw }};
+		$(document).ready(function(){
+			$("#proName").on('change',function(){
+				var proId = parseInt($("#proName option:selected").val());
+				$.each(allPro,function(index,pro){
+					if(pro.id === proId){
+						$("#proImg").html('<img src="{{ asset('uploads/images/') }}'+pro.proPath+'" height="100" width="100">');
+						$("#proExis").html(pro.exist);
+						if(pro.exist <= 0){
+							$("#addPro").hide();
+						}else{
+							$("#addPro").show();
+						}
+					}
+				});
+			});
+			
+			$("#addPro").on('click',function(){
+				var proId = parseInt($("#proName option:selected").val());
+				if($("#proName option:selected").val()==""){
+					alert("Favor de seleccionar un producto del listado.");
+					return false;
+				}
+				if($("#proCantidad").val()==0){
+					alert("Favor de indicar la cantidad de productos a comprar.");
+					return false;
+				}
+				var rowCount = $('#listProduct tr').length;
+				
+				$.each(allPro,function(index,pro){
+					//$("#proExis").val()
+					if(pro.id === proId){
+						allPro[index].exist -= parseInt($("#proCantidad").val());
+						$("#proExis").html(pro.exist);
+						$('#listProduct').bootstrapTable('insertRow', {
+							index: rowCount +1,
+							row: {
+								proVisua: '<img src="{{ asset('uploads/images/') }}'+pro.proPath+'" height="100" width="100">',
+								id: pro.id,
+								proNombre: pro.proNombre,
+								proCantidad: parseInt($("#proCantidad").val()),
+								proPuntos: pro.proPuntos,
+								proMonto: pro.proPrecio,
+								proSubTotal: parseInt(pro.proPrecio)*parseInt($("#proCantidad").val()),
+								proActions: '<button type="button" class="close" aria-label="Close" onclick="removeRow('+pro.id+')"><span aria-hidden="true">&times;</span></button>'
+							}
+						});
+					}
+				});
+				
+			});
+			
+		});
+		function removeRow(id){
+			var rowTable = $('#listProduct').bootstrapTable('getRowByUniqueId',id);
+			$.each(allPro,function(index,pro) {
+				if(pro.id === id) {
+					allPro[index].exist += parseInt(rowTable.proCantidad);
+					$("#proExis").html(pro.exist);
+				}
+			})
+			
+			$('#listProduct').bootstrapTable('removeByUniqueId',id);
+		}
+		$(function () {
+			$('#hover, #striped, #condensed').click(function () {
+				var classes = 'table';
+				
+				if ($('#hover').prop('checked')) {
+					classes += ' table-hover';
+				}
+				if ($('#condensed').prop('checked')) {
+					classes += ' table-condensed';
+				}
+				$('#table-style').bootstrapTable('destroy')
+					.bootstrapTable({
+						classes: classes,
+						striped: $('#striped').prop('checked')
+					});
+			});
+		});
+		
+		function rowStyle(row, index) {
+			var classes = ['active', 'success', 'info', 'warning', 'danger'];
+			
+			if (index % 2 === 0 && index / 2 < classes.length) {
+				return {
+					classes: classes[index / 2]
+				};
+			}
+			return {};
+		}
+		!function ($) {
+			$(document).on("click","ul.nav li.parent > a > span.icon", function(){
+				$(this).find('em:first').toggleClass("glyphicon-minus");
+			});
+			$(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+		}(window.jQuery);
+		
+		$(window).on('resize', function () {
+			if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+		})
+		$(window).on('resize', function () {
+			if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+		})
+	</script>
+
 {% endblock %}
